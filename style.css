@@ -58,11 +58,15 @@ button:hover {
     position: absolute;
     display: block;
 }
+.movie-details {
+    margin-top: 90px;
+}
 .movie-title {
     z-index: 999;
     width: 540px;
     height: 300px;
     position: relative;
+    /* margin-top: 90px; */
 }
 .movie-description {
     z-index: 99;
@@ -70,8 +74,6 @@ button:hover {
     color: #fff;
     align-items: center;
     padding: 5px;
-    /* margin-top: 25%;
-    margin-left: 35px; */
 }
 .movie-genre {
     padding-bottom: 10px;
@@ -93,4 +95,21 @@ button:hover {
     width: 30px;
     height: 30px;
 }
-  
+.trailer-btn {
+    position: relative;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border-color: #F93208;
+    background-color: rgba(206, 204, 204, 0);
+    color: #F93208;
+    box-shadow: 0 0 0 0 rgba(#F93208, .5);
+}
+.trailer-btn:hover {
+    background-color: #F93208;
+    color: #fff;
+    transform: 4px;
+}
+.trailer-btn:active {
+    transform: translateX(4px);
+}
