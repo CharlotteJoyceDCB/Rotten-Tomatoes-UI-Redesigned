@@ -33,7 +33,7 @@ button:hover {
     color: rgb(49, 49, 49);
 }
 .search-btn:active {
-    transform: translateY(1px);
+    background-color: #F93208;
 }
 .browse .dropdown-menu a:focus {
     box-shadow: 0 0 10px 100px #2c2c2c inset;
@@ -96,9 +96,15 @@ button:hover {
     height: 30px;
 }
 .trailer-btn {
+    text-align: center;
     position: relative;
-    padding: 10px;
+    display: inline-flex;
+    align-items: center;
     margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     border-radius: 10px;
     border-color: #F93208;
     background-color: rgba(206, 204, 204, 0);
@@ -111,5 +117,12 @@ button:hover {
     transform: 4px;
 }
 .trailer-btn:active {
-    transform: translateX(4px);
+    background-color: #d02402;
+}
+.trailer-btn span {
+    vertical-align: middle;
+    line-height: normal;
+}
+.trailer-btn i {
+    padding-right: 5px;
 }
