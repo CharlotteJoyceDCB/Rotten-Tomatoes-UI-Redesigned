@@ -8,7 +8,6 @@
 body {
     background-color: #212529;
     position: relative;
-    height: 100%;
 }
 /* NAV BAR */
 input[type="search"]:focus {
@@ -60,92 +59,106 @@ button:hover {
     position: absolute;
     display: block;
 }
-.movie-details {
-    margin-top: 90px;
-}
-.movie-title {
-    z-index: 999;
-    width: 540px;
-    height: 300px;
+.hero-content .movie-details {
+    z-index: 99999;
+    margin-top: 70px;
     position: relative;
-    /* margin-top: 90px; */
 }
-.movie-description {
-    z-index: 99;
+.hero-content .movie-title {
+    position: relative;
+    float: left;
+    width: 500px;
+    height: 300px;
+}
+.hero-content .movie-title img{
+    z-index: 999;
+    position: relative;
+    float: left;
+}
+.hero-content .movie-description{
+    font-size: 12px;
+    z-index: 99999;
     position: relative;
     color: #fff;
     align-items: center;
     padding: 5px;
 }
-.movie-genre {
+.hero-content .movie-genre{
     padding-bottom: 10px;
 }
-.movie-genre span {
+.movie-description .movie-genre span{
     background-color: rgba(217, 217, 217, 0.3);
     color: #fff;
     padding: 4px;
     margin-right: 6px;
+    border-radius: 2px;
 }
-.rating-container {
+.hero-content .movie-description .rating-container{
+    display: inline-flex;
+    align-items: center;
+}
+.hero-content .movie-description .rating-score{
     display: flex;
+    align-items: center;
 }
-.tomatometer, .rating-score span {
+.hero-content .movie-description .rating-score span{
+    padding-left: 5px;
+}
+.hero-content .tomatometer{
     font-weight: 700;
 }
-.rating-score img {
+.hero-content .rating-score img {
     margin-left: 10px;
     width: 30px;
     height: 30px;
 }
-.trailer-btn {
+.hero-content .movie-details .trailer-btn {
+    /* cursor: pointer; */
+    font-size: 10px;
     text-align: center;
     position: relative;
     display: inline-flex;
     align-items: center;
     margin-top: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
     border-radius: 10px;
     border-color: #F93208;
     background-color: rgba(206, 204, 204, 0);
     color: #F93208;
     box-shadow: 0 0 0 0 rgba(#F93208, .5);
 }
-.trailer-btn:hover {
+.hero-content .movie-details  .trailer-btn:hover {
     background-color: #F93208;
     color: #fff;
     transform: 4px;
 }
-.trailer-btn:active {
+.hero-content .movie-details  .trailer-btn:active {
     background-color: #d02402;
 }
-.trailer-btn span {
+.hero-content .movie-details  .trailer-btn span {
     vertical-align: middle;
     line-height: normal;
 }
-.trailer-btn i {
+.hero-content .movie-details .trailer-btn i {
     padding-right: 5px;
 }
+/* Swiper */
 .swiper {
     width: 100%;
-    height: 100%;
-  }
-
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+    height: 100vh;
+}
+.swiper-slide {
+text-align: center;
+font-size: 18px;
+background: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.swiper-slide img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
   

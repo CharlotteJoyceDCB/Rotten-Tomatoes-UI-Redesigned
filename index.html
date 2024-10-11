@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="/images/ratings/fresh.png">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -127,11 +128,38 @@
         </div>
     </main> -->
 
-    <main>
+    <main class="hero-content">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="/images/the-wild-robot-movie.png" alt="">
+                    <div class="movie-poster">
+                        <img src="/images/the-wild-robot-movie.png" class="poster-img" alt="A Wild Robot Movie"> 
+                      </div>
+                      <div class="movie-details container">
+                          <img src="/images/the-wild-robot-text.png" alt="" class="movie-title" data-aos="fade-left"> 
+                        <article class="movie-info col-md-5 col-lg-5">
+                          <div class="movie-description">
+                                <div class="movie-genre">
+                                    <span class="genre">Adventure</span>
+                                    <span class="genre">Sci-Fi</span>
+                                    <span class="genre">Animation</span>
+                                </div>
+                                <p class="movie-synopsis">In an epic journey from DreamWorks Animation, a shipwrecked robot on an 
+                                    uninhabited island bonds with animals & adopts an orphaned gosling.</p></p>
+                                <div class="rating-container">
+                                <span class="tomatometer">Tomatometer:</span>
+                                <div class="rating-score">
+                                    <img src="/images/ratings/fresh.png" alt="">
+                                    <span>98%</span>
+                                </div>
+                                </div>
+                            </div>
+                          <button class="trailer-btn">
+                              <i class="fa-solid fa-play"></i>
+                              <span>WATCH TRAILER</span>
+                          </button>
+                        </article>
+                    </div>
                 </div>
                 <div class="swiper-slide">
                     <img src="/images/the-wild-robot-movie.png" alt="">
@@ -168,6 +196,9 @@
         mousewheel: true,
         keyboard: true,
     });
+    </script>
+    <script>
+        AOS.init();
     </script>
 </body>
 </html>
