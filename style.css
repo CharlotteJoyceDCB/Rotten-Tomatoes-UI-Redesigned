@@ -1,6 +1,9 @@
 :root{
     --swiper-pagination-color: red;
     --swiper-pagination-bullet-inactive-color: #fff;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 * {
     box-sizing: border-box;
@@ -37,9 +40,6 @@ button:focus, button:active {
 button:hover {
     color: rgb(49, 49, 49);
 }
-.search-btn:active {
-    background-color: #F93208;
-}
 .browse .dropdown-menu a:focus {
     box-shadow: 0 0 10px 100px #2c2c2c inset;
 }
@@ -73,11 +73,13 @@ button:hover {
     float: left;
     width: 500px;
     height: 300px;
+    -webkit-animation: myAnimation 0.9s linear forwards;
 }
 .hero-content .movie-title img{
     z-index: 999;
     position: relative;
     float: left;
+    animation-delay: 2s;
 }
 .hero-content .movie-description{
     font-size: 12px;
@@ -96,6 +98,7 @@ button:hover {
     padding: 4px;
     margin-right: 6px;
     border-radius: 2px;
+    cursor: pointer;
 }
 .hero-content .movie-description .rating-container{
     display: inline-flex;
@@ -146,25 +149,44 @@ button:hover {
 .hero-content .movie-details .trailer-btn i {
     padding-right: 5px;
 }
+.movie-details .slider2-title {
+    margin-top: 63px;
+    margin-bottom: 20px;
+    width: max-content;
+    max-height: 200px;
+}
+.movie-details .slide3-title{
+    width: max-content;
+    max-height: 200px;
+    margin-top: 63px;
+    margin-bottom: 20px;
+    padding-right: 100px;
+}
 /* Swiper */
 .swiper {
     width: 100%;
     height: 100vh;
 }
 .swiper-slide {
-text-align: center;
-font-size: 18px;
-background: #fff;
-display: flex;
-justify-content: center;
-align-items: center;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .swiper-slide img {
-display: block;
-width: 100%;
-height: 100%;
-object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .swiper-button-next, .swiper-button-prev{
     color: #F93208 !important;
+}
+.swiper-button-next:active, .swiper-button-prev:active,
+.swiper-button-next:focus, .swiper-button-prev:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
 }
