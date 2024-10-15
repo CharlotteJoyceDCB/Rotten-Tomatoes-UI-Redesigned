@@ -1,4 +1,4 @@
-:root{
+:root {
     --swiper-pagination-color: red;
     --swiper-pagination-bullet-inactive-color: #fff;
     -webkit-user-select: none; /* Safari */
@@ -30,7 +30,7 @@ input[type="search"]::-webkit-search-results-decoration {
 a:hover, .btn:hover {
     color: #F93208 !important;
 }
-.btn-outline-primary .btn:hover{
+.btn-outline-primary .btn:hover {
     color: #F93208 !important;
 }
 button:focus, button:active {
@@ -43,7 +43,7 @@ button:hover {
 .browse .dropdown-menu a:focus {
     box-shadow: 0 0 10px 100px #2c2c2c inset;
 }
-.navbar-toggler button, #menu a{
+.navbar-toggler button, #menu a {
     display: none !important;
 }
 .navbar-collapse #nav-hidden {
@@ -75,13 +75,13 @@ button:hover {
     height: 300px;
     -webkit-animation: myAnimation 0.9s linear forwards;
 }
-.hero-content .movie-title img{
+.hero-content .movie-title img {
     z-index: 999;
     position: relative;
     float: left;
     animation-delay: 2s;
 }
-.hero-content .movie-description{
+.hero-content .movie-description {
     font-size: 12px;
     z-index: 99999;
     position: relative;
@@ -89,10 +89,10 @@ button:hover {
     align-items: center;
     padding: 5px;
 }
-.hero-content .movie-genre{
+.hero-content .movie-genre {
     padding-bottom: 10px;
 }
-.movie-description .movie-genre span{
+.movie-description .movie-genre span {
     background-color: rgba(217, 217, 217, 0.3);
     color: #fff;
     padding: 4px;
@@ -100,18 +100,18 @@ button:hover {
     border-radius: 2px;
     cursor: pointer;
 }
-.hero-content .movie-description .rating-container{
+.hero-content .movie-description .rating-container {
     display: inline-flex;
     align-items: center;
 }
-.hero-content .movie-description .rating-score{
+.hero-content .movie-description .rating-score {
     display: flex;
     align-items: center;
 }
 .hero-content .movie-description .rating-score span{
     padding-left: 5px;
 }
-.hero-content .tomatometer{
+.hero-content .tomatometer {
     font-weight: 700;
 }
 .hero-content .rating-score img {
@@ -155,7 +155,7 @@ button:hover {
     width: max-content;
     max-height: 200px;
 }
-.movie-details .slide3-title{
+.movie-details .slide3-title {
     width: max-content;
     max-height: 200px;
     margin-top: 63px;
@@ -181,11 +181,11 @@ button:hover {
     height: 100%;
     object-fit: cover;
 }
-.swiper-button-next, .swiper-button-prev{
+.swiper-button-next, .swiper-button-prev {
     color: #F93208 !important;
 }
 .swiper-button-next:active, .swiper-button-prev:active,
-.swiper-button-next:focus, .swiper-button-prev:focus{
+.swiper-button-next:focus, .swiper-button-prev:focus {
     outline: none;
     border: none;
     box-shadow: none;
@@ -208,4 +208,48 @@ button:hover {
     padding-right: 5px;
     color: #F93208;
     text-align: center;
+}
+/* Movie Cards Section */
+#tiles-container {
+    display: flex;
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.movie-cards {
+    overflow-x: scroll;
+    padding: 10px 10px;
+   scroll-snap-type: x mandatory;
+   scroll-padding: 0px;
+}
+.card {
+    width: 12rem;
+    border-spacing: 0;
+    display: inline-flex;
+}
+.card .fa-circle-play {
+    position: absolute;
+    color: #fff;
+    z-index: 99;
+    margin-top: 8.5rem;
+    margin-left: 5rem;
+}
+.card .tomatometer {
+    /* background-color: aqua; */
+}
+.card .tomatometer img {
+    max-width: 30px;
+    max-height: 30px;
+}
+.card .title p {
+    font-size: small;
+}
+.card .watch-btn {
+    align-items: center;
+}
+.card .watch-btn button{
+    margin-top: 5px;
+    padding: 8px;
+    font-size: small;
+    border-radius: 25px;
 }
