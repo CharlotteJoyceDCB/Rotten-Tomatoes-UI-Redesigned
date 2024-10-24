@@ -210,19 +210,15 @@ button:hover {
     text-align: center;
 }
 /* Movie Cards Section */
-#tiles-container {
-    /* display: flex;
+/* #tiles-container {
+    display: flex;
     position: relative;
     overflow-x: auto;
-    overflow-y: hidden; */
+    overflow-y: hidden;
     position: relative;
-    height: auto;
     width: 100%;
-    
     display: flex;
-    overflow: hidden!important;
-    
-}
+} */
 .card {
     position: relative;
     width: 10rem;
@@ -231,11 +227,11 @@ button:hover {
     overflow: hidden!important;
 }
 .card-img-top {
+    height: 350px!important;
     position: relative;
     border-radius: 8px;
     overflow: hidden!important;
     object-fit: cover;
-    height: max-content;
 }
 .card-img-top img {
     max-height: fit-content;
@@ -243,8 +239,9 @@ button:hover {
     height: 100%;
     object-fit: cover;
 }
-.card .tomatometer {
-    /* background-color: aqua; */
+.card .tomatometer span {
+    font-size: 12px;
+    font-weight: 600;
 }
 .card .tomatometer img {
     max-width: 25px;
