@@ -103,36 +103,6 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="movie-poster">
-                        <img src="/images/the-wild-robot-movie.png" class="poster-img" alt="A Wild Robot Movie"> 
-                      </div>
-                      <div class="movie-details container">
-                          <img src="/images/the-wild-robot-text.png" alt="" class="movie-title" data-aos="fade-left"> 
-                        <article class="movie-info col-md-5 col-lg-5">
-                          <div class="movie-description">
-                                <div class="movie-genre">
-                                    <span class="genre">Adventure</span>
-                                    <span class="genre">Sci-Fi</span>
-                                    <span class="genre">Animation</span>
-                                </div>
-                                <p class="movie-synopsis">In an epic journey from DreamWorks Animation, a shipwrecked robot on an 
-                                    uninhabited island bonds with animals & adopts an orphaned gosling.</p></p>
-                                <div class="rating-container">
-                                <span class="tomatometer">Tomatometer:</span>
-                                <div class="rating-score">
-                                    <img src="/images/ratings/fresh.png" alt="">
-                                    <span>98%</span>
-                                </div>
-                                </div>
-                            </div>
-                          <button class="trailer-btn">
-                              <i class="fa-solid fa-play"></i>
-                              <span>WATCH TRAILER</span>
-                          </button>
-                        </article>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="movie-poster">
                         <img src="/images/deadpool-and-wolverine.jpg" class="poster-img" alt="Deadpool and Wolverine"> 
                       </div>
                       <div class="movie-details container">
@@ -151,6 +121,36 @@
                                 <div class="rating-score">
                                     <img src="/images/ratings/certified-fresh.png" alt="">
                                     <span>78%</span>
+                                </div>
+                                </div>
+                            </div>
+                          <button class="trailer-btn">
+                              <i class="fa-solid fa-play"></i>
+                              <span>WATCH TRAILER</span>
+                          </button>
+                        </article>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="movie-poster">
+                        <img src="/images/the-wild-robot-movie.png" class="poster-img" alt="A Wild Robot Movie"> 
+                      </div>
+                      <div class="movie-details container">
+                          <img src="/images/the-wild-robot-text.png" alt="" class="movie-title" data-aos="fade-left"> 
+                        <article class="movie-info col-md-5 col-lg-5">
+                          <div class="movie-description">
+                                <div class="movie-genre">
+                                    <span class="genre">Adventure</span>
+                                    <span class="genre">Sci-Fi</span>
+                                    <span class="genre">Animation</span>
+                                </div>
+                                <p class="movie-synopsis">In an epic journey from DreamWorks Animation, a shipwrecked robot on an 
+                                    uninhabited island bonds with animals & adopts an orphaned gosling.</p></p>
+                                <div class="rating-container">
+                                <span class="tomatometer">Tomatometer:</span>
+                                <div class="rating-score">
+                                    <img src="/images/ratings/fresh.png" alt="">
+                                    <span>98%</span>
                                 </div>
                                 </div>
                             </div>
@@ -304,13 +304,14 @@
                 </div>
             </div>
         </div>
+        <a href="#!" class="view-btn">LOAD MORE..</a>
         <!-- end of movie container -->
         <!-- POPULAR MOVIES -->
         <div class="movies-header container">
             <span>l</span>
             <h2>POPULAR</h2>
         </div>
-        <div class="movies-cards container">
+        <div class="movies-cards container" id="popular-cards">
             <div class="card card-img-top">
                 <img src="/images/movie posters/grave-of-the-fireflies-poster.jpg" class="card-img-top" alt="">
                 <div class="card-body">
@@ -408,6 +409,7 @@
                 </div>
             </div>
         </div>
+        <a href="#!" class="view-btn">LOAD MORE..</a>
     </div>
     <!-- END OF MOVIES SECTION-->
     <div class="banner">
@@ -415,12 +417,13 @@
     <p>Can't decide what to watch? <br> Check our <a href="">TOMATOMETER</a></p>
     </div>
     <!-- END OF BANNER SECTION -->
+    <!-- EXPLORE SECTION -->
     <div class="explore-section container">
         <div class="explore-header container">
             <span>l</span>
             <h2>EXPLORE</h2>
         </div>
-        <a href="#">VIEW ALL..</a>
+        <a href="#!">VIEW ALL..</a>
         <div class="explore-cards container">
             <div class="card explore-card">
                 <img src="/images/discover/scream.png" alt="" class="card-img-top">
@@ -449,17 +452,67 @@
         </div>
     </div>
 
-
-
-
-
-
-
-
-
-
     <!-- Footer Section -->
-    <footer></footer>
+    <footer>
+        <div class="footer container">
+            <div class="row container">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="content">
+                        <ul>
+                            <li><a href="#!">Help</a></li>
+                            <li><a href="#!">Critics</a></li>
+                            <li><a href="#!">About Rotten Tomatoes</a></li>
+                            <li><a href="#!">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="content">
+                        <ul>
+                            <li><a href="#!">Critic Submission</a></li>
+                            <li><a href="#!">Licensing</a></li>
+                            <li><a href="#!">Advertise With Us</a></li>
+                            <li><a href="#!">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="content">
+                        <ul>
+                            <li><h6>Follow Us</h6></li>
+                            <p></p>
+                            <span><a href="#!"><i class="fa-brands fa-facebook fa-xl"></i></a></span>
+                            <span><a href="#!"><i class="fa-brands fa-instagram fa-xl"></i></a></span>
+                            <span><a href="#!"><i class="fa-brands fa-x-twitter fa-xl"></i></a></span>
+                            <span><a href="#!"><i class="fa-brands fa-tiktok fa-xl"></i></a></span>
+                            <span><a href="#!"><i class="fa-brands fa-youtube fa-xl"></i></a></span>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="newsletter container">
+                <br>
+                <h6>JOIN THE NEWSLETTER</h6>
+                <p>Get the freshest reviews, news, and more delivered right to your inbox!</p>
+                <input type="email" placeholder="Enter your email address">  <button>SUBMIT</button>
+            </div>
+            <div class="links container">
+                <br>
+                <br>
+                <span><a href="#!"></a>Privacy Policy</a></span> |
+                <span><a href="#!"></a>Terms and Policies</a></span> |
+                <span><a href="#!"></a>Cookie Notice</a></span> |
+                <span><a href="#!"></a>California Notice</a></span> |
+                <span><a href="#!"></a>Ad Choices</a></span> |
+                <span><a href="#!"></a>Accessibility</a></span>
+            </div>
+            <div class="copyrights">
+                <br>
+                <p>Copyright © Fandango. All rights reserved. <br>
+                    Redesigned by Charlotte Joyce De Castro B.</p>
+            </div>
+        </div>
+    </footer>
 
     <!-- Scripts -->
     <script src="/js/swiper.js"></script>
