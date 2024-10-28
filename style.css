@@ -356,6 +356,9 @@ button:hover {
 #explore-title {
     color: #fff;
 }
+#explore-title:hover {
+    color: #939191;
+}
 /* FOOTER SECTION */
 footer {
     background-color: #141414;
@@ -428,4 +431,15 @@ footer .copyrights {
     color: #696969;
     margin: auto;
     text-align: center;
+}
+/* SHOP SECTION */
+.shop-section {
+    height: 100vh;
+    background-color: #fff;
+}
+.shop {
+    padding-top: 80px;
+}
+.shop-card {
+    height: 10rem;
 }
