@@ -359,6 +359,34 @@ button:hover {
 #explore-title:hover {
     color: #939191;
 }
+/* SHOP SECTION */
+.shop-section {
+    position: relative;
+    height: max-content;
+    width: 100%;
+    background-color: #fff;
+    padding-bottom: 60px;
+}
+.shop-cards {
+    padding-top: 89px;
+    cursor: pointer;
+    display: grid; grid-gap: 10px; grid-template-columns: repeat(5, 1fr); 
+}
+.shop-card img {
+    border-radius: 0;
+    object-fit: fill;
+}
+.shop-card {
+    width: 14rem;
+    height: 20rem;
+}
+.shop-card .card-body {
+    line-height: 1;
+}
+.shop-card .ship {
+    color: #696969;
+}
+
 /* FOOTER SECTION */
 footer {
     background-color: #141414;
@@ -431,15 +459,4 @@ footer .copyrights {
     color: #696969;
     margin: auto;
     text-align: center;
-}
-/* SHOP SECTION */
-.shop-section {
-    height: 100vh;
-    background-color: #fff;
-}
-.shop {
-    padding-top: 80px;
-}
-.shop-card {
-    height: 10rem;
 }
