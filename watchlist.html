@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotten Tomatoes Redesigned</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="/images/ratings/fresh.png">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <!-- Navbar brand -->
+            <a class="navbar-brand" href="index.html#home"><img id="rotten-tomatoes-logo"
+            src="/images/rottentomatoes_logo.png" alt="Rotten Tomatoes Logo"
+            draggable="false" height="30" />
+            </a>
+
+            <!-- Toggle button -->
+            <button class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" 
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-3">
+                    <li class="nav-item" id="nav-hidden">
+                    <a class="nav-link active d-flex align-items-center" id="menu" aria-current="page" href="#"><i
+                        class="fas fa-bars pe-2"></i>Menu</a>
+                    </li>
+                </ul>
+
+                <!-- Browse Button -->
+                <div class="dropdown browse">
+                    <button class="btn btn-dark dropdown-toggle shadow-0 me-5" 
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false" 
+                        style="padding-bottom: 0.4rem;">
+                        Browse
+                        <ul class="dropdown-menu dropdown-menu-dark fa-ul ms-auto">
+                        <li>
+                            <a class="dropdown-item" href="movies.html#movies"><span class="fa-li pe-2"></span>Movies</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#"><span class="fa-li pe-2"></span>TV Shows</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#"><span class="fa-li pe-2"></span>Tomatometer</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#"><span class="fa-li pe-2"></span>News</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#"><span class="fa-li pe-2"></span>Critics</a>
+                        </li>
+                        </ul>
+                    </button>
+                </div>
+    
+                <!-- Search Bar -->
+                <div class="search-bar w-100">
+                    <form class="d-flex align-items-center w-100 form-search">
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder="Search movies, tv shows, actors, and more..." aria-label="Search"/>
+                    </div>
+                    <a href="#!" class="text-white search-btn"><i class="fas fa-search ps-3"></i></a>
+                    </form>
+                </div>
+
+                <!-- Nav Links -->
+                <ul class="navbar-nav ms-3">
+                    <li class="nav-item me-3">
+                    <a class="nav-link d-flex align-items-center" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center me-3" href="watchlist.html#watchlist">
+                        <i class="fas fa-bookmark pe-2"></i> Watchlist
+                    </a>
+                    </li>
+                    <li class="nav-item" style="width: 65px;">
+                    <a class="nav-link d-flex align-items-center" href="#!">Sign In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Section -->
+    <main class="watchlist-section" id="watchlist">
+        <div class="tomatoe container">
+            <img src="/images/dead-tomatoe-1-ws.png" alt="">
+            <h5>Nothing here but a rotten tomatoe.</h5>
+            <p>Add something to watch or <a href="#!"> login </a> to access your watchlist.</p>
+
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="/js/swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" integrity="sha384-uuc90h0RhzicZV2C1xxCDLF2EvLclj1E5Vy/gEZzHAd5rEmKRLBl/iA7DKhxMUI4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+        el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+    });
+    </script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
