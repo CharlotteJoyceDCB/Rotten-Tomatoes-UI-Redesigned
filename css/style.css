@@ -18,6 +18,14 @@ body {
     position: relative;
 }
 /* NAV BAR */
+.navbar-dark, .browse .btn-dark, .dropdown-menu, .dropdown-item {
+    background-color: #151515!important;
+    border: none;
+    color: #939191;
+}
+.browse .btn:hover {
+    background-color: #2c2c2c!important;
+}
 input[type="search"]:focus {
     outline: none !important;
     box-shadow: none !important;

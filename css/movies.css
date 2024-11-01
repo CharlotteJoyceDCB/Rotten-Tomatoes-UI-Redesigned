@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root {
+    --swiper-pagination-color: red;
+    --swiper-pagination-bullet-inactive-color: #fff;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+body {
+    background-color: #212529;
+    position: relative;
+}
+/* NAV BAR */
+input[type="search"]:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { 
+    display: none; 
+}
+a:hover, .btn:hover {
+    color: #F93208 !important;
+}
+.btn-outline-primary .btn:hover {
+    color: #F93208 !important;
+}
+button:focus, button:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+button:hover {
+    color: rgb(49, 49, 49);
+}
+.browse .dropdown-menu a:focus {
+    box-shadow: 0 0 10px 100px #2c2c2c inset;
+}
+.navbar-toggler button, #menu a {
+    display: none !important;
+}
+.navbar-collapse #nav-hidden {
+    display: none;
+    visibility: hidden;
+}
+/* Movies Section */
+.movies-section {
+    height: max-content;
+    margin-top: 70px;
+    position: relative;
+    padding-bottom: 80px;
+}
+.movies-header {
+    margin-top: 20px;
+    display: flex;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    text-align: center;
+}
+.movies-header span {
+    font-size: 50px;
+    padding-right: 5px;
+    color: #F93208;
+    text-align: center;
+}
+/* Movie Cards Section */
+.movies-section .view-btn {
+    /* background-color: #F93208; */
+    position: relative;
+    float: inline-end;
+    padding-right: 80px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    color: rgb(147, 147, 147);
+    display: flex;
+}
+.movie-cards {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    display: grid; grid-gap: 10px; grid-template-columns: repeat(6, 1fr); 
+}
+#popular-cards {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    display: grid; grid-gap: 10px; grid-template-columns: repeat(6, 1fr); 
+}
+.card {
+    /* margin-right: 5px; */
+    position: relative;
+    width: 11rem;
+    border-spacing: 0;
+    display: inline-flex;
+    overflow: hidden!important;
+}
+.card-img-top {
+    height: 350px!important;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden!important;
+    object-fit: cover;
+}
+.card-img-top img {
+    max-height: fit-content;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.card .tomatometer span {
+    font-size: 12px;
+    font-weight: 600;
+}
+.card .tomatometer img {
+    max-width: 25px;
+    max-height: 25px;
+}
+.card-title {
+    font-size: 12px;
+    color: #565656;
+}
+.card .watch-btn {
+    align-items: center;
+    font-size: 12px;
+}
+.card .watch-btn button{
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 25px;
+    border-width: 1px;
+}
+.card .watch-btn button:hover {
+    background-color: #e1e1e1;
+}
+
+/* FOOTER SECTION */
+footer {
+    background-color: #141414;
+    padding: 40px;
+}
+footer a, h6 {
+    text-decoration: none;
+    color: #696969;
+    margin: auto;
+}
+footer ul li {
+    list-style-type: none;
+}
+footer .newsletter h6 {
+    padding-left: 30px;
+}
+footer .newsletter p {
+    color: #696969;
+    padding-left: 30px;
+}
+footer input {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    width: 250px;
+    margin-left: 30px;
+}
+footer input[type="email"]:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+footer 
+input[type="email"]::-webkit-search-decoration,
+input[type="email"]::-webkit-search-cancel-button,
+input[type="email"]::-webkit-search-results-button,
+input[type="email"]::-webkit-search-results-decoration { 
+    display: none; 
+}
+footer button {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #F93208;
+    text-align: center;
+    line-height: 1.8em;
+    border: none;
+}
+footer button:hover {
+    background-color: #d02402;
+    color: #fff;
+}
+footer button:active {
+    transform: translateY(1px);
+}
+footer .links {
+    margin: auto;
+    text-align: center;
+}
+footer .links span {
+    color: #696969;
+    cursor: pointer;
+}
+footer .links span:hover {
+    color: #F93208;
+}
+footer .copyrights {
+    color: #696969;
+    margin: auto;
+    text-align: center;
+}
