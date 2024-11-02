@@ -54,6 +54,8 @@ button:hover {
 /* Sorting Section */
 .sort-buttons {
     margin-bottom: 20px;
+    /* display: inline-flex;
+    justify-content: space-between; */
 }
 /* Movies Section */
 .movies-section {

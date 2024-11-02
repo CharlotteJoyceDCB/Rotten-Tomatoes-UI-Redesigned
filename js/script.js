@@ -35,4 +35,19 @@ window.addEventListener('click', function(event) {
 function selectSortOption(element, optionText) {
     // Update the button text
     document.getElementById('sortButton').innerText = 'Sort: ' + optionText;
+}
+
+function updateGenreCount() {
+    // Count the number of checked checkboxes
+    const checkboxes = document.querySelectorAll('.dropdown-item input[type="checkbox"]');
+    let checkedCount = 0;
+    checkboxes.forEach((checkbox) => {
+      if (checkbox.checked) {
+        checkedCount++;
+      }
+    });
+
+    // Update the button text with the count, or reset to "Genre" if none are selected
+    const genreButton = document.getElementById('genreButton');
+    genreButton.innerText = checkedCount > 0 ? `Genre ${checkedCount}` : 'Genre';
   }
