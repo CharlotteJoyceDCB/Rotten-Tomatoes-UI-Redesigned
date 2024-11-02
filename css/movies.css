@@ -57,6 +57,14 @@ button:hover {
     /* display: inline-flex;
     justify-content: space-between; */
 }
+.badge-count {
+    background-color: #e0e0e0; /* Light gray background */
+    color: black;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    margin-left: 5px;
+  }
 /* Movies Section */
 .movies-section {
     height: max-content;

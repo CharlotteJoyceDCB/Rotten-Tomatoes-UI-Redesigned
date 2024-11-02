@@ -286,6 +286,43 @@
                     </li>
                     </ul>
                 </div>
+
+                <!-- Rating Dropdown Button -->
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle" type="button" id="ratingButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    Rating
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="ratingButton">
+                        <li class="dropdown-item">
+                            <input class="form-check-input me-2" type="checkbox" id="rating1" onchange="updateRatingCount()">
+                            <label class="form-check-label" for="rating1">G</label>
+                        </li>
+                        <li class="dropdown-item">
+                            <input class="form-check-input me-2" type="checkbox" id="rating2" onchange="updateRatingCount()">
+                            <label class="form-check-label" for="rating2">PG</label>
+                        </li>
+                        <li class="dropdown-item">
+                            <input class="form-check-input me-2" type="checkbox" id="rating3" onchange="updateRatingCount()">
+                            <label class="form-check-label" for="rating3">PG-13</label>
+                        </li>
+                        <li class="dropdown-item">
+                            <input class="form-check-input me-2" type="checkbox" id="rating4" onchange="updateRatingCount()">
+                            <label class="form-check-label" for="rating4">R</label>
+                        </li>
+                        <li class="dropdown-item">
+                            <input class="form-check-input me-2" type="checkbox" id="rating5" onchange="updateRatingCount()">
+                            <label class="form-check-label" for="rating5">NC-17</label>
+                        </li>
+                        <li class="dropdown-item">
+                            <input class="form-check-input me-2" type="checkbox" id="rating6" onchange="updateRatingCount()">
+                            <label class="form-check-label" for="rating6">NOT RATED</label>
+                        </li>
+                        <li class="dropdown-item">
+                            <input class="form-check-input me-2" type="checkbox" id="rating7" onchange="updateRatingCount()">
+                            <label class="form-check-label" for="rating7">UNRATED</label>
+                        </li>
+                    </ul>
+                </div>
                 <!-- <a href="#!" class="reset">Reset Filters</a> -->
             </div>
             

@@ -49,5 +49,28 @@ function updateGenreCount() {
 
     // Update the button text with the count, or reset to "Genre" if none are selected
     const genreButton = document.getElementById('genreButton');
-    genreButton.innerText = checkedCount > 0 ? `Genre ${checkedCount}` : 'Genre';
+    if (checkedCount > 0) {
+      genreButton.innerHTML = `Genre <span class="badge-count">${checkedCount}</span>`;
+    } else {
+      genreButton.innerHTML = 'Genre';
+    }
+  }
+
+function updateRatingCount() {
+// Count the number of checked checkboxes
+const checkboxes = document.querySelectorAll('.dropdown-item input[type="checkbox"]');
+let checkedCount = 0;
+checkboxes.forEach((checkbox) => {
+    if (checkbox.checked) {
+    checkedCount++;
+    }
+});
+
+// Update the button text with the count, or reset to "Rating" if none are selected
+const ratingButton = document.getElementById('ratingButton');
+    if (checkedCount > 0) {
+      ratingButton.innerHTML = `Rating <span class="badge-count">${checkedCount}</span>`;
+    } else {
+      ratingButton.innerHTML = 'Rating';
+    }
   }
