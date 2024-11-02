@@ -31,3 +31,8 @@ window.addEventListener('click', function(event) {
         cartModal.style.display = 'none';
     }
 });
+
+function selectSortOption(element, optionText) {
+    // Update the button text
+    document.getElementById('sortButton').innerText = 'Sort: ' + optionText;
+  }

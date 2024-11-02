@@ -51,6 +51,10 @@ button:hover {
     display: none;
     visibility: hidden;
 }
+/* Sorting Section */
+.sort-buttons {
+    margin-bottom: 20px;
+}
 /* Movies Section */
 .movies-section {
     height: max-content;
