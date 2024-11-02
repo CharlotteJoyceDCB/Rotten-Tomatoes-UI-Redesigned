@@ -127,7 +127,7 @@
                 </div>
                 
                 <!-- Genre Dropdown Button -->
-                <div class="dropdown genre-btn">
+                <div class="dropdown genre-btn" data-bs-auto-close="outside">
                     <button class="btn btn-light dropdown-toggle" type="button" id="genreButton" data-bs-toggle="dropdown" aria-expanded="false">
                     Genre
                     </button>
@@ -284,11 +284,14 @@
                         <input class="form-check-input me-2" type="checkbox" id="genre38" onchange="updateGenreCount()">
                         <label class="form-check-label" for="genre38">Western</label>
                     </li>
+                    <li>
+                        <div class="clear-all" onclick="clearAll()">Clear All</div>
+                    </li>
                     </ul>
                 </div>
 
                 <!-- Rating Dropdown Button -->
-                <div class="dropdown">
+                <div class="dropdown" data-bs-auto-close="outside">
                     <button class="btn btn-light dropdown-toggle" type="button" id="ratingButton" data-bs-toggle="dropdown" aria-expanded="false">
                     Rating
                     </button>
@@ -320,6 +323,39 @@
                         <li class="dropdown-item">
                             <input class="form-check-input me-2" type="checkbox" id="rating7" onchange="updateRatingCount()">
                             <label class="form-check-label" for="rating7">UNRATED</label>
+                        </li>
+                        <li>
+                            <div class="clear-all" onclick="clearAll()">Clear All</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Popcornmeter Dropdown Button -->
+                <div class="popcornmeter dropdown" data-bs-auto-close="outside">
+                    <button class="btn btn-light dropdown-toggle" type="button" id="popcornmeterButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        Popcornmeter
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="popcornmeterButton">
+                        <li class="dropdown-item">
+                            <input class="form-check-input me-2" type="checkbox" id="popcornmeter1" onchange="updatePopcornmeterCount()">
+                            <img class="rate-img" src="/images/ratings/hot.png" alt="">
+                            <label class="form-check-label" for="popcornmeter1">Verified Hot</label>
+                            <p class="filter-description">A special distinction awarded to the highest verified theatrical movies.</p>
+                        </li>
+                        <li class="dropdown-item">
+                            <input class="form-check-input me-2" type="checkbox" id="popcornmeter2" onchange="updatePopcornmeterCount()">
+                            <img class="rate-img" src="/images/ratings/high-rate.png" alt="">
+                            <label class="form-check-label" for="popcornmeter2">Hot</label>
+                            <p class="filter-description">At least 60% of user ratings for a movie or TV show are positive.</p>
+                        </li>
+                        <li class="dropdown-item">
+                            <input class="form-check-input me-2" type="checkbox" id="popcornmeter3" onchange="updatePopcornmeterCount()">
+                            <img class="rate-img" src="/images/ratings/low-rate.png" alt="">
+                            <label class="form-check-label" for="popcornmeter3">Stale</label>
+                            <p class="filter-description">Less than 60% of user ratings for a movie or TV show are positive.</p>
+                        </li>
+                        <li>
+                            <div class="clear-all" onclick="clearAll()">Clear All</div>
                         </li>
                     </ul>
                 </div>

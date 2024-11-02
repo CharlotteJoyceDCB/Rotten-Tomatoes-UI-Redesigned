@@ -64,6 +64,17 @@ button:hover {
     overflow: scroll;
     overflow-x: hidden;
 }
+.popcornmeter .dropdown-menu {
+    width: 400px;
+}
+.popcornmeter .dropdown-menu p {
+    text-wrap: wrap;
+    margin-left: 30px;
+}
+.popcornmeter .rate-img {
+    height: 25px;
+    width: 25px;
+}
 .badge-count {
     background-color: #e0e0e0; /* Light gray background */
     color: black;
