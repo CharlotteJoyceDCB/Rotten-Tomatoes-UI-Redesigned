@@ -37,6 +37,11 @@ function selectSortOption(element, optionText) {
     document.getElementById('sortButton').innerText = 'Sort: ' + optionText;
 }
 
+function selectSettingOption(element, optionText) {
+    // Update the button text
+    document.getElementById('settingButton').innerText = ' ' + optionText;
+}
+
 function updateGenreCount() {
     // Count the number of checked checkboxes
     const checkboxes = document.querySelectorAll('.dropdown-item input[type="checkbox"]');

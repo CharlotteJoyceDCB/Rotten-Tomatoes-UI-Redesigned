@@ -126,6 +126,19 @@
                   </ul>
                 </div>
                 
+                <!-- Setting Dropdown Button -->
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle" type="button" id="settingButton" data-bs-toggle="dropdown" aria-expanded="false">
+                      In Theaters
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="settingButton">
+                      <li><a class="dropdown-item" href="#" onclick="selectSettingOption(this, 'In Theaters')">In Theaters</a></li>
+                      <li><a class="dropdown-item" href="#" onclick="selectSettingOption(this, 'At Home')">At Home</a></li>
+                      <li><a class="dropdown-item" href="#" onclick="selectSettingOption(this, 'Coming Soon')">Coming Soon</a></li>
+                      <li><a class="dropdown-item" href="#" onclick="selectSettingOption(this, 'TV Shows')">TV Shows</a></li>
+                    </ul>
+                  </div>
+
                 <!-- Genre Dropdown Button -->
                 <div class="dropdown genre-btn" data-bs-auto-close="outside">
                     <button class="btn btn-light dropdown-toggle" type="button" id="genreButton" data-bs-toggle="dropdown" aria-expanded="false">
