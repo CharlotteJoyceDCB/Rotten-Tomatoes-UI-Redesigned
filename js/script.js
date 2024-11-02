@@ -84,6 +84,12 @@ checkboxes.forEach((checkbox) => {
     checkedCount++;
     }
 });
+function toggleCheckbox(id) {
+    // Toggle the checkbox based on its current state
+    const checkbox = document.getElementById(id);
+    checkbox.checked = !checkbox.checked;
+    updateGenreCount();
+  }
     
 // Update the button text with the count, or reset to "Rating" if none are selected
 const ratingButton = document.getElementById('popcornmeterButton');
@@ -105,9 +111,4 @@ const ratingButton = document.getElementById('popcornmeterButton');
     popcornmeterButton.innerHTML = 'Popcornmeter';
     }
 
-    function toggleCheckbox(id) {
-        // Toggle the checkbox based on its current state
-        const checkbox = document.getElementById(id);
-        checkbox.checked = !checkbox.checked;
-        updateGenreCount();
-      }
+    

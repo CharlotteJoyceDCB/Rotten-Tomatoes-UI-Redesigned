@@ -64,14 +64,14 @@ button:hover {
     overflow: scroll;
     overflow-x: hidden;
 }
-.popcornmeter .dropdown-menu {
+.popcornmeter .dropdown-menu, .tomatometer .dropdown-menu {
     width: 400px;
 }
-.popcornmeter .dropdown-menu p {
+.popcornmeter .dropdown-menu p, .tomatometer .dropdown-menu p {
     text-wrap: wrap;
     margin-left: 30px;
 }
-.popcornmeter .rate-img {
+.popcornmeter .rate-img, .tomatometer .rate-img {
     height: 25px;
     width: 25px;
 }

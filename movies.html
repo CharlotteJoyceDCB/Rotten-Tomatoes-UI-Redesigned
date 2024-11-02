@@ -359,6 +359,36 @@
                         </li>
                     </ul>
                 </div>
+
+                <!-- Tomatometer Dropdown Button -->
+                <div class="tomatometer dropdown" data-bs-auto-close="outside">
+                    <button class="btn btn-light dropdown-toggle" type="button" id="tomatometerButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        Tomatometer
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="tomatometerButton">
+                        <li class="dropdown-item">
+                            <input class="form-check-input me-2" type="checkbox" id="tomatometer1" onchange="updatePopcornmeterCount()">
+                            <img class="rate-img" src="/images/ratings/certified-fresh.png" alt="">
+                            <label class="form-check-label" for="tomatometer1">Certified Fresh</label>
+                            <p class="filter-description">A special distinction awarded to the highest verified theatrical movies.</p>
+                        </li>
+                        <li class="dropdown-item">
+                            <input class="form-check-input me-2" type="checkbox" id="tomatometer2" onchange="updatePopcornmeterCount()">
+                            <img class="rate-img" src="/images/ratings/fresh.png" alt="">
+                            <label class="form-check-label" for="tomatometer2">Fresh</label>
+                            <p class="filter-description">At least 60% of user ratings for a movie or TV show are positive.</p>
+                        </li>
+                        <li class="dropdown-item">
+                            <input class="form-check-input me-2" type="checkbox" id="tomatometer3" onchange="updatePopcornmeterCount()">
+                            <img class="rate-img" src="/images/ratings/rotten.png" alt="">
+                            <label class="form-check-label" for="tomatometer3">Rotten</label>
+                            <p class="filter-description">Less than 60% of user ratings for a movie or TV show are positive.</p>
+                        </li>
+                        <li>
+                            <div class="clear-all" onclick="clearAll()">Clear All</div>
+                        </li>
+                    </ul>
+                </div>
                 <!-- <a href="#!" class="reset">Reset Filters</a> -->
             </div>
             
