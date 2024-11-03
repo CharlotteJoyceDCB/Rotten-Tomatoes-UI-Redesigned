@@ -89,12 +89,6 @@ checkboxes.forEach((checkbox) => {
     checkedCount++;
     }
 });
-function toggleCheckbox(id) {
-    // Toggle the checkbox based on its current state
-    const checkbox = document.getElementById(id);
-    checkbox.checked = !checkbox.checked;
-    updateGenreCount();
-  }
     
 // Update the button text with the count, or reset to "Rating" if none are selected
 const ratingButton = document.getElementById('popcornmeterButton');
@@ -104,16 +98,17 @@ const ratingButton = document.getElementById('popcornmeterButton');
         ratingButton.innerHTML = 'Popcornmeter';
     }
     }
-    function clearAll() {
-    // Uncheck all checkboxes
-    const checkboxes = document.querySelectorAll('.dropdown-item input[type="checkbox"]');
-    checkboxes.forEach((checkbox) => {
-        checkbox.checked = false;
-    });
+    
+function clearAll() {
+// Uncheck all checkboxes
+const checkboxes = document.querySelectorAll('.dropdown-item input[type="checkbox"]');
+checkboxes.forEach((checkbox) => {
+    checkbox.checked = false;
+});
 
-    // Update the genre button to show "Genre" without a count
-    const popcornmeterButton = document.getElementById('popcornmeterButton');
-    popcornmeterButton.innerHTML = 'Popcornmeter';
-    }
+// Update the genre button to show "Genre" without a count
+const popcornmeterButton = document.getElementById('popcornmeterButton');
+popcornmeterButton.innerHTML = 'Popcornmeter';
+}
 
     

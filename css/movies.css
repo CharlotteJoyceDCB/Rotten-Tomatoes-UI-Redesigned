@@ -75,6 +75,18 @@ button:hover {
     height: 25px;
     width: 25px;
 }
+.dropdown .dropdown-item:hover {
+    background-color: #e3e1e1;
+}
+.dropdown .dropdown-item:active {
+    color: #000000;
+}
+.dropdown .clear-all {
+    color: rgb(54, 54, 251);
+    float: right;
+    padding-right: 5px;
+    cursor: pointer;
+}
 .badge-count {
     background-color: #e0e0e0; /* Light gray background */
     color: black;
