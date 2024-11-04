@@ -42,73 +42,23 @@ function selectSettingOption(element, optionText) {
     document.getElementById('settingButton').innerText = ' ' + optionText;
 }
 
+
 function updateGenreCount() {
-    // Count the number of checked checkboxes
-    const checkboxes = document.querySelectorAll('.dropdown-item input[type="checkbox"]');
-    let checkedCount = 0;
-    checkboxes.forEach((checkbox) => {
-      if (checkbox.checked) {
-        checkedCount++;
-      }
-    });
-
-    // Update the button text with the count, or reset to "Genre" if none are selected
-    const genreButton = document.getElementById('genreButton');
-    if (checkedCount > 0) {
-      genreButton.innerHTML = `Genre <span class="badge-count">${checkedCount}</span>`;
-    } else {
-      genreButton.innerHTML = 'Genre';
-    }
-  }
-
-function updateRatingCount() {
-// Count the number of checked checkboxes
-const checkboxes = document.querySelectorAll('.dropdown-item input[type="checkbox"]');
-let checkedCount = 0;
-checkboxes.forEach((checkbox) => {
-    if (checkbox.checked) {
-    checkedCount++;
-    }
-});
-
-// Update the button text with the count, or reset to "Rating" if none are selected
-const ratingButton = document.getElementById('ratingButton');
-    if (checkedCount > 0) {
-      ratingButton.innerHTML = `Rating <span class="badge-count">${checkedCount}</span>`;
-    } else {
-      ratingButton.innerHTML = 'Rating';
-    }
-  }
-
-function updatePopcornmeterCount() {
-// Count the number of checked checkboxes
-const checkboxes = document.querySelectorAll('.dropdown-item input[type="checkbox"]');
-let checkedCount = 0;
-checkboxes.forEach((checkbox) => {
-    if (checkbox.checked) {
-    checkedCount++;
-    }
-});
-    
-// Update the button text with the count, or reset to "Rating" if none are selected
-const ratingButton = document.getElementById('popcornmeterButton');
-    if (checkedCount > 0) {
-        ratingButton.innerHTML = `Popcornmeter <span class="badge-count">${checkedCount}</span>`;
-    } else {
-        ratingButton.innerHTML = 'Popcornmeter';
-    }
-    }
-    
-function clearAll() {
-// Uncheck all checkboxes
-const checkboxes = document.querySelectorAll('.dropdown-item input[type="checkbox"]');
-checkboxes.forEach((checkbox) => {
-    checkbox.checked = false;
-});
-
-// Update the genre button to show "Genre" without a count
-const popcornmeterButton = document.getElementById('popcornmeterButton');
-popcornmeterButton.innerHTML = 'Popcornmeter';
+    const selectedCount = document.querySelectorAll('.genre-btn .dropdown-item input:checked').length;
+    document.getElementById('genreButton').textContent = selectedCount > 0 ? `Genre (${selectedCount})` : 'Genre';
 }
 
-    
+function updateRatingCount() {
+    const selectedCount = document.querySelectorAll('#ratingButton + .dropdown-menu input:checked').length;
+    document.getElementById('ratingButton').textContent = selectedCount > 0 ? `Rating (${selectedCount})` : 'Rating';
+}
+
+function updatePopcornmeterCount() {
+    const selectedCount = document.querySelectorAll('#popcornmeterButton + .dropdown-menu input:checked').length;
+    document.getElementById('popcornmeterButton').textContent = selectedCount > 0 ? `Popcornmeter (${selectedCount})` : 'Popcornmeter';
+}
+
+function updateTomatometerCount() {
+    const selectedCount = document.querySelectorAll('#tomatometerButton + .dropdown-menu input:checked').length;
+    document.getElementById('tomatometerButton').textContent = selectedCount > 0 ? `Tomatometer (${selectedCount})` : 'Tomatometer';
+}
