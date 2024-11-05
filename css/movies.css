@@ -53,16 +53,23 @@ button:hover {
 }
 /* Sorting Section */
 .sort-buttons {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     margin-left: 3.6rem;
     gap: 10px;
     display: inline-flex;
-    justify-content: start;
+    justify-content: space-between;
+    /* overflow: auto; */
+    padding-bottom: 10px;
+}
+.dropdown .btn {
+    font-size: 16px;
+    border-radius: 25px;
 }
 .genre-btn .dropdown-menu {
     height: 400px;
     overflow: scroll;
     overflow-x: hidden;
+    z-index: 99;
 }
 .popcornmeter .dropdown-menu, .tomatometer .dropdown-menu {
     width: 400px;
@@ -76,16 +83,21 @@ button:hover {
     width: 25px;
 }
 .dropdown .dropdown-item:hover {
-    background-color: #e3e1e1;
+    color: #F93208;
+    background-color: #f1f1f1;
 }
 .dropdown .dropdown-item:active {
     color: #000000;
 }
 .dropdown .clear-all {
-    color: rgb(54, 54, 251);
+    color: #F93208;
     float: right;
     padding-right: 5px;
     cursor: pointer;
+    text-decoration: none;
+}
+.dropdown .clear-all:hover {
+    text-decoration: underline;
 }
 .badge-count {
     background-color: #e0e0e0; /* Light gray background */
@@ -94,7 +106,20 @@ button:hover {
     border-radius: 12px;
     font-size: 0.8em;
     margin-left: 5px;
-  }
+}
+.certified-fresh-btn button, .verified-hot-btn button {
+    border-radius: 25px;
+}
+.certified-fresh-btn img, .verified-hot-btn img {
+    height: 20px;
+    width: 20px;
+}
+.certified-fresh-btn button:active {
+    background-color: #696969;
+}
+.certified-fresh-btn, .verified-hot-btn {
+    text-wrap: nowrap;
+}
 /* Movies Section */
 .movies-section {
     height: max-content;
@@ -132,7 +157,7 @@ button:hover {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    display: grid; grid-gap: 10px; grid-template-columns: repeat(6, 1fr); 
+    display: grid; grid-gap:15px; grid-template-columns: repeat(6, 1fr); 
 }
 #popular-cards {
     position: relative;

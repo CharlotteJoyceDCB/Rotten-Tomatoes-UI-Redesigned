@@ -121,8 +121,8 @@
                     <li><a class="dropdown-item" href="#" onclick="selectSortOption(this, 'A → Z')">A → Z</a></li>
                     <li><a class="dropdown-item" href="#" onclick="selectSortOption(this, 'Tomatometer (Highest)')">Tomatometer (Highest)</a></li>
                     <li><a class="dropdown-item" href="#" onclick="selectSortOption(this, 'Tomatometer (Lowest)')">Tomatometer (Lowest)</a></li>
-                    <li><a class="dropdown-item" href="#" onclick="selectSortOption(this, 'PopcornMeter (Highest)')">PopcornMeter (Highest)</a></li>
-                    <li><a class="dropdown-item" href="#" onclick="selectSortOption(this, 'PopcornMeter (Lowest)')">PopcornMeter (Lowest)</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="selectSortOption(this, 'PopcornMeter (Highest)')">Popcornmeter (Highest)</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="selectSortOption(this, 'PopcornMeter (Lowest)')">Popcornmeter (Lowest)</a></li>
                   </ul>
                 </div>
                 
@@ -297,8 +297,8 @@
                         <input class="form-check-input me-2" type="checkbox" id="genre38" onchange="updateGenreCount()">
                         <label class="form-check-label" for="genre38">Western</label>
                     </li>
-                    <li>
-                        <div class="clear-all" data-bs-auto-close="outside" onclick="clearAll()">Clear All</div>
+                    <li role="menuitem">
+                        <button type="button" class="clear-all btn btn-link" onclick="clearAll()">Clear All</button>
                     </li>
                     </ul>
                 </div>
@@ -367,8 +367,8 @@
                             <label class="form-check-label" for="popcornmeter3">Stale</label>
                             <p class="filter-description">Less than 60% of user ratings for a movie or TV show are positive.</p>
                         </li>
-                        <li>
-                            <div class="clear-all" onclick="clearAll()">Clear All</div>
+                        <li role="menuitem">
+                            <button type="button" class="clear-all btn btn-link" onclick="clearAll()">Clear All</button>
                         </li>
                     </ul>
                 </div>
@@ -397,10 +397,22 @@
                             <label class="form-check-label" for="tomatometer3">Rotten</label>
                             <p class="filter-description">Less than 60% of user ratings for a movie or TV show are positive.</p>
                         </li>
-                        <li>
-                            <div class="clear-all" onclick="clearAll()">Clear All</div>
+                        <li role="menuitem">
+                            <button type="button" class="clear-all btn btn-link" onclick="clearAll()">Clear All</button>
                         </li>
                     </ul>
+                </div>
+                <div class="certified-fresh-btn" data-bs-auto-close="outside">
+                    <button class="btn btn-light" type="button" id="certifiedFreshButton">
+                        <img src="/images/ratings/certified-fresh.png" alt="">
+                        Certified Fresh
+                    </button>
+                </div>
+                <div class="verified-hot-btn" data-bs-auto-close="outside">
+                    <button class="btn btn-light" type="button" id="verifiedHotButton">
+                        <img src="/images/ratings/hot.png" alt="">
+                        Verified Hot
+                    </button>
                 </div>
                 <!-- <a href="#!" class="reset">Reset Filters</a> -->
             </div>
@@ -503,15 +515,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <a href="#!" class="view-btn">LOAD MORE..</a>
-            <!-- end of movie container -->
-            <!-- POPULAR MOVIES -->
-            <div class="movies-header container">
-                <span>l</span>
-                <h2>POPULAR</h2>
-            </div>
-            <div class="movies-cards container" id="popular-cards">
                 <div class="card card-img-top">
                     <img src="/images/movie posters/grave-of-the-fireflies-poster.jpg" class="card-img-top" alt="">
                     <div class="card-body">
@@ -609,7 +612,8 @@
                     </div>
                 </div>
             </div>
-            <a href="#!" class="view-btn">LOAD MORE..</a>
+            </div>
+            <a href="#!" class="view-btn" type="button">LOAD MORE..</a>
     </main>
 
     <!-- Movies Section -->

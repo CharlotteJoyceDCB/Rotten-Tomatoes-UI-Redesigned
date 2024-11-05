@@ -42,7 +42,6 @@ function selectSettingOption(element, optionText) {
     document.getElementById('settingButton').innerText = ' ' + optionText;
 }
 
-
 function updateGenreCount() {
     const selectedCount = document.querySelectorAll('.genre-btn .dropdown-item input:checked').length;
     document.getElementById('genreButton').textContent = selectedCount > 0 ? `Genre (${selectedCount})` : 'Genre';
