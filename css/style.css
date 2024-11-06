@@ -574,6 +574,15 @@ button:hover {
     background-color: #fff!important;
     color: #4f4f4f;
 }
+.genre-meter .tomatometer-sort img {
+    height: 30px;
+    width: 30px;
+    padding-right: 4px;
+}
+.genre-meter .tomatometer-sort .dropdown-menu {
+    height: max-content;
+    overflow: hidden;
+}
 /* FOOTER SECTION */
 footer {
     background-color: #141414;
