@@ -590,6 +590,9 @@ button:hover {
     height: max-content;
     overflow: hidden;
 }
+.table button:hover {
+    color: #fff!important;
+}
 /* FOOTER SECTION */
 footer {
     background-color: #141414;
