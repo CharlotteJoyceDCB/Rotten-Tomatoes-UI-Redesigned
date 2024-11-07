@@ -51,6 +51,15 @@ button:hover {
     display: none;
     visibility: hidden;
 }
+.navbar .search-bar span {
+    cursor: pointer;
+}
+.navbar .search-bar i:active {
+    transform: translateY(2px);
+}
+.navbar .search-bar i:hover {
+    color: #F93208;
+}
 /* Sorting Section */
 .sort-buttons {
     margin-bottom: 25px;

@@ -218,6 +218,15 @@ button:hover {
     border: none;
     box-shadow: none;
 }
+.navbar .search-bar span {
+    cursor: pointer;
+}
+.navbar .search-bar i:active {
+    transform: translateY(2px);
+}
+.navbar .search-bar i:hover {
+    color: #F93208;
+}
 /* Movies Section */
 .movies-section {
     height: max-content;
