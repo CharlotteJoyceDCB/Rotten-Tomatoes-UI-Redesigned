@@ -11,11 +11,9 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    box-sizing: border-box;
 }
 body {
     background-color: #212529;
-    position: relative;
 }
 /* NAV BAR */
 input[type="search"]:focus {
@@ -69,7 +67,7 @@ button:hover {
 .tvshows-section {
     padding-top: 40px;
 }
-.tvshows-section .title {
+.tvshows-section .title, .tvshows-section h2 {
     color: #fff;
     padding-bottom: 10px;
 }
@@ -83,7 +81,57 @@ button:hover {
 .streaming-platforms img:hover{
     filter: grayscale(0%);
 }
-
+/* Movie Cards */
+.carousel-item {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    white-space: nowrap;
+}
+.card {
+    background-color: #1b1b1b;
+    color: white;
+    border: none;
+    width: 150px;
+    transition: transform 0.3s;
+    display: inline-block;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card img {
+    border-radius: 8px;
+}
+.badge {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: green;
+    color: white;
+    padding: 2px 6px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+.carousel-control-prev,
+        .carousel-control-next {
+            top: 50%;
+            transform: translateY(-50%);
+            width: auto;
+            height: auto;
+            font-size: 2rem;
+        }
+        .carousel-control-prev {
+            left: -50px; 
+        }
+        .carousel-control-next {
+            right: -50px; 
+        }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+        }
 /* FOOTER SECTION */
 footer {
     background-color: #141414;
