@@ -82,56 +82,76 @@ button:hover {
     filter: grayscale(0%);
 }
 /* Movie Cards */
-.carousel-item {
-    display: flex;
-    justify-content: start;
-    gap: 20px;
-    white-space: nowrap;
-}
 .card {
-    background-color: #1b1b1b;
-    color: white;
-    border: none;
-    width: 150px;
-    transition: transform 0.3s;
-    display: inline-block;
-}
-.card:hover {
-    transform: scale(1.05);
-}
-.card img {
+width: 100%; 
+}  
+
+.card {
+    width: 100%;
+    max-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
+    overflow: hidden;
 }
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
 .badge {
     position: absolute;
-    top: 8px;
-    right: 8px;
-    background-color: green;
+    top: 10px;
+    right: 10px;
+    background: green;
     color: white;
-    padding: 2px 6px;
-    font-size: 12px;
-    border-radius: 4px;
+    padding: 5px;
+    border-radius: 5px;
 }
-.carousel-control-prev,
-        .carousel-control-next {
-            top: 50%;
-            transform: translateY(-50%);
-            width: auto;
-            height: auto;
-            font-size: 2rem;
-        }
-        .carousel-control-prev {
-            left: -50px; 
-        }
-        .carousel-control-next {
-            right: -50px; 
-        }
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-        }
+
+.card-body {
+    padding: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    font-weight: bold;
+}
+.swiper-container {
+    width: 100%; 
+    overflow: hidden; 
+}
+.swiper-slide {
+display: flex;
+justify-content: center;
+align-items: center;
+width: auto; 
+}
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px; /* Adjust to control vertical position */
+    left: 50%; /* Center the pagination */
+    transform: translateX(-50%); /* Center alignment */
+    z-index: 5; /* Ensure it's above cards but below buttons */
+  }
+.swiper-button-next,
+.swiper-button-prev {
+  top: 50%; /* Center the buttons vertically */
+  transform: translateY(-50%);
+  color: #1e90ff; /* Optional: Change button color */
+  z-index: 10; /* Ensure buttons are above other content */
+}
+
+.swiper-button-next {
+  right: -20px; /* Move the next button further to the right */
+}
+
+.swiper-button-prev {
+  left: -20px; /* Move the prev button further to the left */
+}
+
+
 /* FOOTER SECTION */
 footer {
     background-color: #141414;
