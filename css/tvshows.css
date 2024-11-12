@@ -83,15 +83,12 @@ button:hover {
 }
 /* Movie Cards */
 .card {
-width: 100%; 
-}  
-
-.card {
     width: 100%;
     max-width: 250px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .card img {
@@ -121,36 +118,46 @@ width: 100%;
 .swiper-container {
     width: 100%; 
     overflow: hidden; 
+    position: relative;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .swiper-slide {
-display: flex;
-justify-content: center;
-align-items: center;
-width: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto; 
 }
 .swiper-pagination {
     position: absolute;
-    bottom: 10px; /* Adjust to control vertical position */
-    left: 50%; /* Center the pagination */
-    transform: translateX(-50%); /* Center alignment */
-    z-index: 5; /* Ensure it's above cards but below buttons */
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
   }
 .swiper-button-next,
 .swiper-button-prev {
-  top: 50%; /* Center the buttons vertically */
-  transform: translateY(-50%);
-  color: #1e90ff; /* Optional: Change button color */
-  z-index: 10; /* Ensure buttons are above other content */
+    top: 50%!important;
+    transform: translateY(-50%);
+    color: #fff!important;
+    z-index: 10;
 }
-
 .swiper-button-next {
-  right: -20px; /* Move the next button further to the right */
+  right: -10px;
 }
-
 .swiper-button-prev {
-  left: -20px; /* Move the prev button further to the left */
+  left: -10px;
 }
-
+.swiper-button-next, .swiper-button-prev {
+    color: #F93208 !important;
+}
+.swiper-button-next:active, .swiper-button-prev:active,
+.swiper-button-next:focus, .swiper-button-prev:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
 
 /* FOOTER SECTION */
 footer {
