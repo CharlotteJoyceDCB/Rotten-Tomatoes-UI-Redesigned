@@ -1,7 +1,8 @@
-// Function to handle cart icon click
-// document.querySelector('.floating-cart').addEventListener('click', function() {
-//     alert('Cart preview opening soon!');
-// });
+window.addEventListener('load', function() {
+    setTimeout(() => {
+        window.scrollTo(0, 0);
+    }, 0);
+});
 
 // Function to update cart count
 function updateCartCount(count) {

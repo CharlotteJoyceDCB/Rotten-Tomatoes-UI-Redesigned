@@ -13,6 +13,10 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: auto;
+}
+
 body {
     background-color: #212529;
     position: relative;
@@ -68,7 +72,7 @@ button:hover {
 /* Sorting Section */
 .sort-buttons {
     margin-bottom: 25px;
-    margin-left: 3.6rem;
+    margin-left: 2rem;
     gap: 10px;
     display: inline-flex;
     justify-content: space-between;
