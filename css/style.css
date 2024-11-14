@@ -388,6 +388,16 @@ button:hover {
     border: none;
     background-color: inherit;
 }
+.trailer-card .badge-category {
+    background-color: #007bff;
+    color: white;
+    padding: 0.2em 0.6em;
+    font-size: 0.75em;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    border-radius: 5px;
+}
 .trailer-card .card-title {
     color: #fff;
     font-size: medium;
