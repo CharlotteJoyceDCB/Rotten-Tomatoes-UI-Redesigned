@@ -351,13 +351,6 @@ button:hover {
     height: max-content;
     padding-bottom: 30px;
 }
-.trailer-section a {
-    float: inline-end;
-    padding-bottom: 20px;
-    padding-right: 25px;
-    text-decoration: none;
-    color: rgb(147, 147, 147);
-}
 .trailer-header {
     margin-top: 20px;
     display: flex;
@@ -377,7 +370,7 @@ button:hover {
     display: inline-flex!important;
     overflow: hidden;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 .trailer-card {
@@ -405,8 +398,10 @@ button:hover {
 .trailer-card .card-body p {
     color: #fff;
 }
-#trailer-title:hover {
-    color: #939191;
+.trailer-card .card-body .card-title:hover, 
+.trailer-card .card-body .card-text:hover {
+    cursor: pointer;
+    color: #007bff;
 }
 /* EXPLORE SECTION */
 .explore-section {
