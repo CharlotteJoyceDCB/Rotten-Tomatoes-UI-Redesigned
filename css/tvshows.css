@@ -119,7 +119,6 @@ button:hover {
     padding: 5px;
     border-radius: 5px;
 }
-
 .card-body {
     padding: 10px;
 }
@@ -127,6 +126,15 @@ button:hover {
 .card-text {
     font-size: 16px;
     font-weight: bold;
+}
+.tvshows-section .expand {
+    color: #696969;
+    padding-top: 15px;
+    float: inline-end;
+    text-decoration: none;
+}
+.tvshows-section .expand:hover {
+    color: #F93208;
 }
 .swiper-container {
     width: 100%; 
@@ -142,16 +150,16 @@ button:hover {
     align-items: center;
     width: auto; 
 }
-.swiper-pagination {
+/* .swiper-pagination {
     position: absolute;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 5;
-  }
+  } */
 .swiper-button-next,
 .swiper-button-prev {
-    top: 50%!important;
+    top: 40%!important;
     transform: translateY(-50%);
     color: #fff!important;
     z-index: 10;
@@ -163,7 +171,7 @@ button:hover {
   left: -10px;
 }
 .swiper-button-next, .swiper-button-prev {
-    color: #F93208 !important;
+    color: #fff!important;
 }
 .swiper-button-next:active, .swiper-button-prev:active,
 .swiper-button-next:focus, .swiper-button-prev:focus {
