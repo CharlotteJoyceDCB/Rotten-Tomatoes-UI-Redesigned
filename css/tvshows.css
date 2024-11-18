@@ -136,6 +136,11 @@ button:hover {
 .tvshows-section .expand:hover {
     color: #F93208;
 }
+/* SECTIONS */
+.tvshows {
+    border-radius: 15px;
+}
+/* SWIPER */
 .swiper-container {
     width: 100%; 
     overflow: hidden; 
@@ -149,13 +154,6 @@ button:hover {
     justify-content: center;
     align-items: center;
     width: auto; 
-}
-/* SECTIONS */
-.featured {
-    border-radius: 15px;
-}
-.anime {
-
 }
 /* .swiper-pagination {
     position: absolute;
