@@ -140,6 +140,8 @@ button:hover {
 .tvshows {
     border-radius: 15px;
     background-color: #2e3237;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 /* SWIPER */
 .swiper-container {
