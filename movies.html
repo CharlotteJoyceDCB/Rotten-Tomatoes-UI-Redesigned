@@ -104,520 +104,518 @@
     </nav>
     <!-- Main Section -->
     <main class="movies-section" id="movies">
-            <div class="movies-header container">
-                <!-- <span>l</span> -->
-                <h2>MOVIES TO STREAM</h2>
-            </div> -->
-            <div class="sort-buttons container">
-                <!-- Sort Dropdown Button -->
-                <div class="dropdown">
-                  <button class="btn btn-light dropdown-toggle" type="button" id="sortButton" data-bs-toggle="dropdown" aria-expanded="false">
-                    Sort: Most Popular
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="sortButton">
-                    <li><a class="dropdown-item" href="#" onclick="selectSortOption(this, 'Most Popular')">Most Popular</a></li>
-                    <li><a class="dropdown-item" href="#" onclick="selectSortOption(this, 'Newest')">Newest</a></li>
-                    <li><a class="dropdown-item" href="#" onclick="selectSortOption(this, 'Top Box Office')">Top Box Office</a></li>
-                    <li><a class="dropdown-item" href="#" onclick="selectSortOption(this, 'A → Z')">A → Z</a></li>
-                    <li><a class="dropdown-item" href="#" onclick="selectSortOption(this, 'Tomatometer (Highest)')">Tomatometer (Highest)</a></li>
-                    <li><a class="dropdown-item" href="#" onclick="selectSortOption(this, 'Tomatometer (Lowest)')">Tomatometer (Lowest)</a></li>
-                    <li><a class="dropdown-item" href="#" onclick="selectSortOption(this, 'PopcornMeter (Highest)')">Popcornmeter (Highest)</a></li>
-                    <li><a class="dropdown-item" href="#" onclick="selectSortOption(this, 'PopcornMeter (Lowest)')">Popcornmeter (Lowest)</a></li>
-                  </ul>
-                </div>
-                
-                <!-- Setting Dropdown Button -->
-                <div class="dropdown">
-                    <button class="btn btn-light dropdown-toggle" type="button" id="settingButton" data-bs-toggle="dropdown" aria-expanded="false">
-                      In Theaters
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="settingButton">
-                      <li><a class="dropdown-item" href="#" onclick="selectSettingOption(this, 'In Theaters')">In Theaters</a></li>
-                      <li><a class="dropdown-item" href="#" onclick="selectSettingOption(this, 'At Home')">At Home</a></li>
-                      <li><a class="dropdown-item" href="#" onclick="selectSettingOption(this, 'Coming Soon')">Coming Soon</a></li>
-                      <li><a class="dropdown-item" href="#" onclick="selectSettingOption(this, 'TV Shows')">TV Shows</a></li>
-                    </ul>
-                  </div>
+        <div class="movies-header container">
+            <!-- <span>l</span> -->
+            <h2>MOVIES TO STREAM</h2>
+        </div>
+        <div class="sort-buttons container">
+            <!-- Sort Dropdown Button -->
+            <div class="dropdown">
+                <button class="btn btn-light dropdown-toggle" type="button" id="sortButton" data-bs-toggle="dropdown" aria-expanded="false">
+                Sort: Most Popular
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="sortButton">
+                <li><a class="dropdown-item" href="#" onclick="selectSortOption(this, 'Most Popular')">Most Popular</a></li>
+                <li><a class="dropdown-item" href="#" onclick="selectSortOption(this, 'Newest')">Newest</a></li>
+                <li><a class="dropdown-item" href="#" onclick="selectSortOption(this, 'Top Box Office')">Top Box Office</a></li>
+                <li><a class="dropdown-item" href="#" onclick="selectSortOption(this, 'A → Z')">A → Z</a></li>
+                <li><a class="dropdown-item" href="#" onclick="selectSortOption(this, 'Tomatometer (Highest)')">Tomatometer (Highest)</a></li>
+                <li><a class="dropdown-item" href="#" onclick="selectSortOption(this, 'Tomatometer (Lowest)')">Tomatometer (Lowest)</a></li>
+                <li><a class="dropdown-item" href="#" onclick="selectSortOption(this, 'PopcornMeter (Highest)')">Popcornmeter (Highest)</a></li>
+                <li><a class="dropdown-item" href="#" onclick="selectSortOption(this, 'PopcornMeter (Lowest)')">Popcornmeter (Lowest)</a></li>
+                </ul>
+            </div>
+            
+            <!-- Setting Dropdown Button -->
+            <div class="dropdown">
+                <button class="btn btn-light dropdown-toggle" type="button" id="settingButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    In Theaters
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="settingButton">
+                    <li><a class="dropdown-item" href="#" onclick="selectSettingOption(this, 'In Theaters')">In Theaters</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="selectSettingOption(this, 'At Home')">At Home</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="selectSettingOption(this, 'Coming Soon')">Coming Soon</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="selectSettingOption(this, 'TV Shows')">TV Shows</a></li>
+                </ul>
+            </div>
 
-                <!-- Genre Dropdown Button -->
-                <div class="dropdown genre-btn" data-bs-auto-close="outside">
-                    <button class="btn btn-light dropdown-toggle" type="button" id="genreButton" data-bs-toggle="dropdown" aria-expanded="false">
-                    Genre
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="genreButton">
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre1" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre1">Action</label>
+            <!-- Genre Dropdown Button -->
+            <div class="dropdown genre-btn" data-bs-auto-close="outside">
+                <button class="btn btn-light dropdown-toggle" type="button" id="genreButton" data-bs-toggle="dropdown" aria-expanded="false">
+                Genre
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="genreButton">
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre1" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre1">Action</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre2" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre2">Adventure</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre3" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre3">Animation</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre4" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre4">Anime</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre5" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre5">Biography</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre6" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre6">Comedy</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre7" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre7">Crime</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre8" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre8">Documentary</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre9" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre9">Drama</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre10" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre10">Entertainment</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre11" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre11">Faith & Spirituality</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre12" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre12">Fantasy</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre13" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre13">Game Show</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre14" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre14">LGBTQ+</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre15" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre15">Health & Wellness</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre16" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre16">History</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre17" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre17">Holiday</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre18" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre18">Horror</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre19" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre19">House & Garden</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre20" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre20">Kids & Family</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre21" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre21">Music</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre22" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre22">Musical</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre23" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre23">Mystery & Thriller</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre24" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre24">Nature</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre25" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre25">News</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre26" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre26">Reality</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre27" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre27">Romance</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre28" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre28">Sci-Fi</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre29" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre29">Short</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre30" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre30">Soap</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre31" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre31">Special Interest</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre32" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre32">Sports</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre33" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre33">Stand-Up</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre34" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre34">Talk Show</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre35" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre35">Travel</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre36" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre36">Variety</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre37" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre37">War</label>
+                </li>
+                <li class="genre dropdown-item">
+                    <input class="form-check-input me-2" type="checkbox" id="genre38" onchange="updateGenreCount()">
+                    <label class="form-check-label" for="genre38">Western</label>
+                </li>
+                <li role="menuitem">
+                    <button type="button" class="clear-all btn btn-link" onclick="clearAll()">Clear All</button>
+                </li>
+                </ul>
+            </div>
+
+            <!-- Rating Dropdown Button -->
+            <div class="dropdown" data-bs-auto-close="outside">
+                <button class="btn btn-light dropdown-toggle" type="button" id="ratingButton" data-bs-toggle="dropdown" aria-expanded="false">
+                Rating
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="ratingButton">
+                    <li class="dropdown-item">
+                        <input class="form-check-input me-2" type="checkbox" id="rating1" onchange="updateRatingCount()">
+                        <label class="form-check-label" for="rating1">G</label>
                     </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre2" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre2">Adventure</label>
+                    <li class="dropdown-item">
+                        <input class="form-check-input me-2" type="checkbox" id="rating2" onchange="updateRatingCount()">
+                        <label class="form-check-label" for="rating2">PG</label>
                     </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre3" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre3">Animation</label>
+                    <li class="dropdown-item">
+                        <input class="form-check-input me-2" type="checkbox" id="rating3" onchange="updateRatingCount()">
+                        <label class="form-check-label" for="rating3">PG-13</label>
                     </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre4" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre4">Anime</label>
+                    <li class="dropdown-item">
+                        <input class="form-check-input me-2" type="checkbox" id="rating4" onchange="updateRatingCount()">
+                        <label class="form-check-label" for="rating4">R</label>
                     </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre5" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre5">Biography</label>
+                    <li class="dropdown-item">
+                        <input class="form-check-input me-2" type="checkbox" id="rating5" onchange="updateRatingCount()">
+                        <label class="form-check-label" for="rating5">NC-17</label>
                     </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre6" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre6">Comedy</label>
+                    <li class="dropdown-item">
+                        <input class="form-check-input me-2" type="checkbox" id="rating6" onchange="updateRatingCount()">
+                        <label class="form-check-label" for="rating6">NOT RATED</label>
                     </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre7" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre7">Crime</label>
+                    <li class="dropdown-item">
+                        <input class="form-check-input me-2" type="checkbox" id="rating7" onchange="updateRatingCount()">
+                        <label class="form-check-label" for="rating7">UNRATED</label>
                     </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre8" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre8">Documentary</label>
+                    <li>
+                        <div class="clear-all" onclick="clearAll()">Clear All</div>
                     </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre9" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre9">Drama</label>
+                </ul>
+            </div>
+
+            <!-- Popcornmeter Dropdown Button -->
+            <div class="popcornmeter dropdown" data-bs-auto-close="outside">
+                <button class="btn btn-light dropdown-toggle" type="button" id="popcornmeterButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    Popcornmeter
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="popcornmeterButton">
+                    <li class="dropdown-item">
+                        <input class="form-check-input me-2" type="checkbox" id="popcornmeter1" onchange="updatePopcornmeterCount()">
+                        <img class="rate-img" src="/images/ratings/hot.png" alt="">
+                        <label class="form-check-label" for="popcornmeter1">Verified Hot</label>
+                        <p class="filter-description">A special distinction awarded to the highest verified theatrical movies.</p>
                     </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre10" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre10">Entertainment</label>
+                    <li class="dropdown-item">
+                        <input class="form-check-input me-2" type="checkbox" id="popcornmeter2" onchange="updatePopcornmeterCount()">
+                        <img class="rate-img" src="/images/ratings/high-rate.png" alt="">
+                        <label class="form-check-label" for="popcornmeter2">Hot</label>
+                        <p class="filter-description">At least 60% of user ratings for a movie or TV show are positive.</p>
                     </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre11" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre11">Faith & Spirituality</label>
-                    </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre12" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre12">Fantasy</label>
-                    </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre13" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre13">Game Show</label>
-                    </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre14" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre14">LGBTQ+</label>
-                    </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre15" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre15">Health & Wellness</label>
-                    </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre16" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre16">History</label>
-                    </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre17" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre17">Holiday</label>
-                    </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre18" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre18">Horror</label>
-                    </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre19" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre19">House & Garden</label>
-                    </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre20" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre20">Kids & Family</label>
-                    </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre21" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre21">Music</label>
-                    </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre22" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre22">Musical</label>
-                    </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre23" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre23">Mystery & Thriller</label>
-                    </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre24" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre24">Nature</label>
-                    </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre25" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre25">News</label>
-                    </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre26" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre26">Reality</label>
-                    </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre27" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre27">Romance</label>
-                    </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre28" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre28">Sci-Fi</label>
-                    </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre29" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre29">Short</label>
-                    </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre30" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre30">Soap</label>
-                    </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre31" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre31">Special Interest</label>
-                    </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre32" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre32">Sports</label>
-                    </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre33" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre33">Stand-Up</label>
-                    </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre34" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre34">Talk Show</label>
-                    </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre35" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre35">Travel</label>
-                    </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre36" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre36">Variety</label>
-                    </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre37" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre37">War</label>
-                    </li>
-                    <li class="genre dropdown-item">
-                        <input class="form-check-input me-2" type="checkbox" id="genre38" onchange="updateGenreCount()">
-                        <label class="form-check-label" for="genre38">Western</label>
+                    <li class="dropdown-item">
+                        <input class="form-check-input me-2" type="checkbox" id="popcornmeter3" onchange="updatePopcornmeterCount()">
+                        <img class="rate-img" src="/images/ratings/low-rate.png" alt="">
+                        <label class="form-check-label" for="popcornmeter3">Stale</label>
+                        <p class="filter-description">Less than 60% of user ratings for a movie or TV show are positive.</p>
                     </li>
                     <li role="menuitem">
                         <button type="button" class="clear-all btn btn-link" onclick="clearAll()">Clear All</button>
                     </li>
-                    </ul>
-                </div>
+                </ul>
+            </div>
 
-                <!-- Rating Dropdown Button -->
-                <div class="dropdown" data-bs-auto-close="outside">
-                    <button class="btn btn-light dropdown-toggle" type="button" id="ratingButton" data-bs-toggle="dropdown" aria-expanded="false">
-                    Rating
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="ratingButton">
-                        <li class="dropdown-item">
-                            <input class="form-check-input me-2" type="checkbox" id="rating1" onchange="updateRatingCount()">
-                            <label class="form-check-label" for="rating1">G</label>
-                        </li>
-                        <li class="dropdown-item">
-                            <input class="form-check-input me-2" type="checkbox" id="rating2" onchange="updateRatingCount()">
-                            <label class="form-check-label" for="rating2">PG</label>
-                        </li>
-                        <li class="dropdown-item">
-                            <input class="form-check-input me-2" type="checkbox" id="rating3" onchange="updateRatingCount()">
-                            <label class="form-check-label" for="rating3">PG-13</label>
-                        </li>
-                        <li class="dropdown-item">
-                            <input class="form-check-input me-2" type="checkbox" id="rating4" onchange="updateRatingCount()">
-                            <label class="form-check-label" for="rating4">R</label>
-                        </li>
-                        <li class="dropdown-item">
-                            <input class="form-check-input me-2" type="checkbox" id="rating5" onchange="updateRatingCount()">
-                            <label class="form-check-label" for="rating5">NC-17</label>
-                        </li>
-                        <li class="dropdown-item">
-                            <input class="form-check-input me-2" type="checkbox" id="rating6" onchange="updateRatingCount()">
-                            <label class="form-check-label" for="rating6">NOT RATED</label>
-                        </li>
-                        <li class="dropdown-item">
-                            <input class="form-check-input me-2" type="checkbox" id="rating7" onchange="updateRatingCount()">
-                            <label class="form-check-label" for="rating7">UNRATED</label>
-                        </li>
-                        <li>
-                            <div class="clear-all" onclick="clearAll()">Clear All</div>
-                        </li>
-                    </ul>
-                </div>
+            <!-- Tomatometer Dropdown Button -->
+            <div class="tomatometer dropdown" data-bs-auto-close="outside">
+                <button class="btn btn-light dropdown-toggle" type="button" id="tomatometerButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    Tomatometer
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="tomatometerButton">
+                    <li class="dropdown-item">
+                        <input class="form-check-input me-2" type="checkbox" id="tomatometer1" onchange="updateTomatometerCount()">
+                        <img class="rate-img" src="/images/ratings/certified-fresh.png" alt="">
+                        <label class="form-check-label" for="tomatometer1">Certified Fresh</label>
+                        <p class="filter-description">A special distinction awarded to the highest verified theatrical movies.</p>
+                    </li>
+                    <li class="dropdown-item">
+                        <input class="form-check-input me-2" type="checkbox" id="tomatometer2" onchange="updateTomatometerCount()">
+                        <img class="rate-img" src="/images/ratings/fresh.png" alt="">
+                        <label class="form-check-label" for="tomatometer2">Fresh</label>
+                        <p class="filter-description">At least 60% of user ratings for a movie or TV show are positive.</p>
+                    </li>
+                    <li class="dropdown-item">
+                        <input class="form-check-input me-2" type="checkbox" id="tomatometer3" onchange="updateTomatometerCount()">
+                        <img class="rate-img" src="/images/ratings/rotten.png" alt="">
+                        <label class="form-check-label" for="tomatometer3">Rotten</label>
+                        <p class="filter-description">Less than 60% of user ratings for a movie or TV show are positive.</p>
+                    </li>
+                    <li role="menuitem">
+                        <button type="button" class="clear-all btn btn-link" onclick="clearAll()">Clear All</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="certified-fresh-btn" data-bs-auto-close="outside">
+                <button class="btn btn-light" type="button" id="certifiedFreshButton">
+                    <img src="/images/ratings/certified-fresh.png" alt="">
+                    Certified Fresh
+                </button>
+            </div>
+            <div class="verified-hot-btn" data-bs-auto-close="outside">
+                <button class="btn btn-light" type="button" id="verifiedHotButton">
+                    <img src="/images/ratings/hot.png" alt="">
+                    Verified Hot
+                </button>
+            </div>
+            <!-- <a href="#!" class="reset">Reset Filters</a> -->
+        </div>
+        
 
-                <!-- Popcornmeter Dropdown Button -->
-                <div class="popcornmeter dropdown" data-bs-auto-close="outside">
-                    <button class="btn btn-light dropdown-toggle" type="button" id="popcornmeterButton" data-bs-toggle="dropdown" aria-expanded="false">
-                        Popcornmeter
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="popcornmeterButton">
-                        <li class="dropdown-item">
-                            <input class="form-check-input me-2" type="checkbox" id="popcornmeter1" onchange="updatePopcornmeterCount()">
-                            <img class="rate-img" src="/images/ratings/hot.png" alt="">
-                            <label class="form-check-label" for="popcornmeter1">Verified Hot</label>
-                            <p class="filter-description">A special distinction awarded to the highest verified theatrical movies.</p>
-                        </li>
-                        <li class="dropdown-item">
-                            <input class="form-check-input me-2" type="checkbox" id="popcornmeter2" onchange="updatePopcornmeterCount()">
-                            <img class="rate-img" src="/images/ratings/high-rate.png" alt="">
-                            <label class="form-check-label" for="popcornmeter2">Hot</label>
-                            <p class="filter-description">At least 60% of user ratings for a movie or TV show are positive.</p>
-                        </li>
-                        <li class="dropdown-item">
-                            <input class="form-check-input me-2" type="checkbox" id="popcornmeter3" onchange="updatePopcornmeterCount()">
-                            <img class="rate-img" src="/images/ratings/low-rate.png" alt="">
-                            <label class="form-check-label" for="popcornmeter3">Stale</label>
-                            <p class="filter-description">Less than 60% of user ratings for a movie or TV show are positive.</p>
-                        </li>
-                        <li role="menuitem">
-                            <button type="button" class="clear-all btn btn-link" onclick="clearAll()">Clear All</button>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Tomatometer Dropdown Button -->
-                <div class="tomatometer dropdown" data-bs-auto-close="outside">
-                    <button class="btn btn-light dropdown-toggle" type="button" id="tomatometerButton" data-bs-toggle="dropdown" aria-expanded="false">
-                        Tomatometer
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="tomatometerButton">
-                        <li class="dropdown-item">
-                            <input class="form-check-input me-2" type="checkbox" id="tomatometer1" onchange="updateTomatometerCount()">
-                            <img class="rate-img" src="/images/ratings/certified-fresh.png" alt="">
-                            <label class="form-check-label" for="tomatometer1">Certified Fresh</label>
-                            <p class="filter-description">A special distinction awarded to the highest verified theatrical movies.</p>
-                        </li>
-                        <li class="dropdown-item">
-                            <input class="form-check-input me-2" type="checkbox" id="tomatometer2" onchange="updateTomatometerCount()">
-                            <img class="rate-img" src="/images/ratings/fresh.png" alt="">
-                            <label class="form-check-label" for="tomatometer2">Fresh</label>
-                            <p class="filter-description">At least 60% of user ratings for a movie or TV show are positive.</p>
-                        </li>
-                        <li class="dropdown-item">
-                            <input class="form-check-input me-2" type="checkbox" id="tomatometer3" onchange="updateTomatometerCount()">
-                            <img class="rate-img" src="/images/ratings/rotten.png" alt="">
-                            <label class="form-check-label" for="tomatometer3">Rotten</label>
-                            <p class="filter-description">Less than 60% of user ratings for a movie or TV show are positive.</p>
-                        </li>
-                        <li role="menuitem">
-                            <button type="button" class="clear-all btn btn-link" onclick="clearAll()">Clear All</button>
-                        </li>
-                    </ul>
-                </div>
-                <div class="certified-fresh-btn" data-bs-auto-close="outside">
-                    <button class="btn btn-light" type="button" id="certifiedFreshButton">
+        <div class="movie-cards container">
+            <div class="card card-img-top">
+                <img src="/images/movie posters/beetlejuice-poster.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <div class="tomatometer mb-2">
                         <img src="/images/ratings/certified-fresh.png" alt="">
-                        Certified Fresh
-                    </button>
+                        <span>77%</span>
+                        <img src="/images/ratings/high-rate.png" alt="">
+                        <span>80%</span>
+                    </div>
+                    <p class="card-title">Beetlejuice</p>
+                    <div class="watch-btn text-center">
+                        <button><i class="fa-solid fa-plus"></i> 
+                            WATCHLIST</button>
+                    </div>
                 </div>
-                <div class="verified-hot-btn" data-bs-auto-close="outside">
-                    <button class="btn btn-light" type="button" id="verifiedHotButton">
+            </div>
+            <div class="card card-img-top">
+                <img src="/images/movie posters/jk-i-am-still-poster.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <div class="tomatometer mb-2">
+                        <img src="/images/ratings/unrated.png" alt="">
+                        <span>--</span>
                         <img src="/images/ratings/hot.png" alt="">
-                        Verified Hot
-                    </button>
-                </div>
-                <!-- <a href="#!" class="reset">Reset Filters</a> -->
-            </div>
-            
-
-            <div class="movie-cards container">
-                <div class="card card-img-top">
-                    <img src="/images/movie posters/beetlejuice-poster.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <div class="tomatometer mb-2">
-                            <img src="/images/ratings/certified-fresh.png" alt="">
-                            <span>77%</span>
-                            <img src="/images/ratings/high-rate.png" alt="">
-                            <span>80%</span>
-                        </div>
-                        <p class="card-title">Beetlejuice</p>
-                        <div class="watch-btn text-center">
-                            <button><i class="fa-solid fa-plus"></i> 
-                                WATCHLIST</button>
-                        </div>
+                        <span>100%</span>
                     </div>
-                </div>
-                <div class="card card-img-top">
-                    <img src="/images/movie posters/jk-i-am-still-poster.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <div class="tomatometer mb-2">
-                            <img src="/images/ratings/unrated.png" alt="">
-                            <span>--</span>
-                            <img src="/images/ratings/hot.png" alt="">
-                            <span>100%</span>
-                        </div>
-                        <p class="card-title">JK: I Am Still</p>
-                        <div class="watch-btn text-center">
-                            <button><i class="fa-solid fa-plus"></i> 
-                                WATCHLIST</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card-img-top">
-                    <img src="/images/movie posters/megalopolis-poster.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <div class="tomatometer mb-2">
-                            <img src="/images/ratings/rotten.png" alt="">
-                            <span>51%</span>
-                            <img src="/images/ratings/unreleased.png" alt="">
-                            <span>--</span>
-                        </div>
-                        <p class="card-title">Megalopolis</p>
-                        <div class="watch-btn text-center">
-                            <button><i class="fa-solid fa-plus"></i> 
-                                WATCHLIST</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card-img-top">
-                    <img src="/images/movie posters/blackphone.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <div class="tomatometer mb-2">
-                            <img src="/images/ratings/certified-fresh.png" alt="">
-                            <span>81%</span>
-                            <img src="/images/ratings/high-rate.png" alt="">
-                            <span>88%</span>
-                        </div>
-                        <p class="card-title">Black Phone</p>
-                        <div class="watch-btn text-center">
-                            <button><i class="fa-solid fa-plus"></i> 
-                                WATCHLIST</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card-img-top">
-                    <img src="/images/movie posters/five-nights-at-freddies.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <div class="tomatometer mb-2">
-                            <img src="/images/ratings/rotten.png" alt="">
-                            <span>32%</span>
-                            <img src="/images/ratings/high-rate.png" alt="">
-                            <span>86%</span>
-                        </div>
-                        <p class="card-title">Five Nights at Freddy's</p>
-                        <div class="watch-btn text-center">
-                            <button><i class="fa-solid fa-plus"></i> 
-                                WATCHLIST</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card-img-top">
-                    <img src="/images/movie posters/good-rich.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <div class="tomatometer mb-2">
-                            <img src="/images/ratings/fresh.png" alt="">
-                            <span>74%</span>
-                            <img src="/images/ratings/high-rate.png" alt="">
-                            <span>89%</span>
-                        </div>
-                        <p class="card-title">Good Rich</p>
-                        <div class="watch-btn text-center">
-                            <button><i class="fa-solid fa-plus"></i> 
-                                WATCHLIST</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card-img-top">
-                    <img src="/images/movie posters/grave-of-the-fireflies-poster.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <div class="tomatometer mb-2">
-                            <img src="/images/ratings/certified-fresh.png" alt="">
-                            <span>100%</span>
-                            <img src="/images/ratings/hot.png" alt="">
-                            <span>95%</span>
-                        </div>
-                        <p class="card-title">Grave Of The Fireflies</p>
-                        <div class="watch-btn text-center">
-                            <button><i class="fa-solid fa-plus"></i> 
-                                WATCHLIST</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card-img-top">
-                    <img src="/images/movie posters/inside-out-2-poster.png" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <div class="tomatometer mb-2">
-                            <img src="/images/ratings/certified-fresh.png" alt="">
-                            <span>90%</span>
-                            <img src="/images/ratings/hot.png" alt="">
-                            <span>95%</span>
-                        </div>
-                        <p class="card-title">Inside Out 2</p>
-                        <div class="watch-btn text-center">
-                            <button><i class="fa-solid fa-plus"></i> 
-                                WATCHLIST</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card-img-top">
-                    <img src="/images/movie posters/transformers-one.png" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <div class="tomatometer mb-2">
-                            <img src="/images/ratings/certified-fresh.png" alt="">
-                            <span>88%</span>
-                            <img src="/images/ratings/high-rate.png" alt="">
-                            <span>98%</span>
-                        </div>
-                        <p class="card-title">Transformers One</p>
-                        <div class="watch-btn text-center">
-                            <button><i class="fa-solid fa-plus"></i> 
-                                WATCHLIST</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card-img-top">
-                    <img src="/images/movie posters/howls-moving-castle.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <div class="tomatometer mb-2">
-                            <img src="/images/ratings/certified-fresh.png" alt="">
-                            <span>87%</span>
-                            <img src="/images/ratings/high-rate.png" alt="">
-                            <span>93%</span>
-                        </div>
-                        <p class="card-title">Howl's Moving Castle</p>
-                        <div class="watch-btn text-center">
-                            <button><i class="fa-solid fa-plus"></i> 
-                                WATCHLIST</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card-img-top">
-                    <img src="/images/movie posters/fall-guy-poster.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <div class="tomatometer mb-2">
-                            <img src="/images/ratings/certified-fresh.png" alt="">
-                            <span>81%</span>
-                            <img src="/images/ratings/high-rate.png" alt="">
-                            <span>86%</span>
-                        </div>
-                        <p class="card-title">Fall Guy</p>
-                        <div class="watch-btn text-center">
-                            <button><i class="fa-solid fa-plus"></i> 
-                                WATCHLIST</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card-img-top">
-                    <img src="/images/movie posters/the-wild-robot-.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <div class="tomatometer mb-2">
-                            <img src="/images/ratings/certified-fresh.png" alt="">
-                            <span>98%</span>
-                            <img src="/images/ratings/unreleased.png" alt="">
-                            <span>--</span>
-                        </div>
-                        <p class="card-title">The Wild Robot</p>
-                        <div class="watch-btn text-center">
-                            <button><i class="fa-solid fa-plus"></i> 
-                                WATCHLIST</button>
-                        </div>
+                    <p class="card-title">JK: I Am Still</p>
+                    <div class="watch-btn text-center">
+                        <button><i class="fa-solid fa-plus"></i> 
+                            WATCHLIST</button>
                     </div>
                 </div>
             </div>
+            <div class="card card-img-top">
+                <img src="/images/movie posters/megalopolis-poster.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <div class="tomatometer mb-2">
+                        <img src="/images/ratings/rotten.png" alt="">
+                        <span>51%</span>
+                        <img src="/images/ratings/unreleased.png" alt="">
+                        <span>--</span>
+                    </div>
+                    <p class="card-title">Megalopolis</p>
+                    <div class="watch-btn text-center">
+                        <button><i class="fa-solid fa-plus"></i> 
+                            WATCHLIST</button>
+                    </div>
+                </div>
             </div>
+            <div class="card card-img-top">
+                <img src="/images/movie posters/blackphone.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <div class="tomatometer mb-2">
+                        <img src="/images/ratings/certified-fresh.png" alt="">
+                        <span>81%</span>
+                        <img src="/images/ratings/high-rate.png" alt="">
+                        <span>88%</span>
+                    </div>
+                    <p class="card-title">Black Phone</p>
+                    <div class="watch-btn text-center">
+                        <button><i class="fa-solid fa-plus"></i> 
+                            WATCHLIST</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-img-top">
+                <img src="/images/movie posters/five-nights-at-freddies.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <div class="tomatometer mb-2">
+                        <img src="/images/ratings/rotten.png" alt="">
+                        <span>32%</span>
+                        <img src="/images/ratings/high-rate.png" alt="">
+                        <span>86%</span>
+                    </div>
+                    <p class="card-title">Five Nights at Freddy's</p>
+                    <div class="watch-btn text-center">
+                        <button><i class="fa-solid fa-plus"></i> 
+                            WATCHLIST</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-img-top">
+                <img src="/images/movie posters/good-rich.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <div class="tomatometer mb-2">
+                        <img src="/images/ratings/fresh.png" alt="">
+                        <span>74%</span>
+                        <img src="/images/ratings/high-rate.png" alt="">
+                        <span>89%</span>
+                    </div>
+                    <p class="card-title">Good Rich</p>
+                    <div class="watch-btn text-center">
+                        <button><i class="fa-solid fa-plus"></i> 
+                            WATCHLIST</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-img-top">
+                <img src="/images/movie posters/grave-of-the-fireflies-poster.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <div class="tomatometer mb-2">
+                        <img src="/images/ratings/certified-fresh.png" alt="">
+                        <span>100%</span>
+                        <img src="/images/ratings/hot.png" alt="">
+                        <span>95%</span>
+                    </div>
+                    <p class="card-title">Grave Of The Fireflies</p>
+                    <div class="watch-btn text-center">
+                        <button><i class="fa-solid fa-plus"></i> 
+                            WATCHLIST</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-img-top">
+                <img src="/images/movie posters/inside-out-2-poster.png" class="card-img-top" alt="">
+                <div class="card-body">
+                    <div class="tomatometer mb-2">
+                        <img src="/images/ratings/certified-fresh.png" alt="">
+                        <span>90%</span>
+                        <img src="/images/ratings/hot.png" alt="">
+                        <span>95%</span>
+                    </div>
+                    <p class="card-title">Inside Out 2</p>
+                    <div class="watch-btn text-center">
+                        <button><i class="fa-solid fa-plus"></i> 
+                            WATCHLIST</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-img-top">
+                <img src="/images/movie posters/transformers-one.png" class="card-img-top" alt="">
+                <div class="card-body">
+                    <div class="tomatometer mb-2">
+                        <img src="/images/ratings/certified-fresh.png" alt="">
+                        <span>88%</span>
+                        <img src="/images/ratings/high-rate.png" alt="">
+                        <span>98%</span>
+                    </div>
+                    <p class="card-title">Transformers One</p>
+                    <div class="watch-btn text-center">
+                        <button><i class="fa-solid fa-plus"></i> 
+                            WATCHLIST</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-img-top">
+                <img src="/images/movie posters/howls-moving-castle.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <div class="tomatometer mb-2">
+                        <img src="/images/ratings/certified-fresh.png" alt="">
+                        <span>87%</span>
+                        <img src="/images/ratings/high-rate.png" alt="">
+                        <span>93%</span>
+                    </div>
+                    <p class="card-title">Howl's Moving Castle</p>
+                    <div class="watch-btn text-center">
+                        <button><i class="fa-solid fa-plus"></i> 
+                            WATCHLIST</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-img-top">
+                <img src="/images/movie posters/fall-guy-poster.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <div class="tomatometer mb-2">
+                        <img src="/images/ratings/certified-fresh.png" alt="">
+                        <span>81%</span>
+                        <img src="/images/ratings/high-rate.png" alt="">
+                        <span>86%</span>
+                    </div>
+                    <p class="card-title">Fall Guy</p>
+                    <div class="watch-btn text-center">
+                        <button><i class="fa-solid fa-plus"></i> 
+                            WATCHLIST</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-img-top">
+                <img src="/images/movie posters/the-wild-robot-.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <div class="tomatometer mb-2">
+                        <img src="/images/ratings/certified-fresh.png" alt="">
+                        <span>98%</span>
+                        <img src="/images/ratings/unreleased.png" alt="">
+                        <span>--</span>
+                    </div>
+                    <p class="card-title">The Wild Robot</p>
+                    <div class="watch-btn text-center">
+                        <button><i class="fa-solid fa-plus"></i> 
+                            WATCHLIST</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
             <a href="#!" class="view-btn" type="button">LOAD MORE..</a>
     </main>
 
-    <!-- Movies Section -->
-    
     <!-- Footer Section -->
     <footer>
         <div class="footer container">

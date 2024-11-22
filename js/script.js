@@ -62,3 +62,4 @@ function updateTomatometerCount() {
     const selectedCount = document.querySelectorAll('#tomatometerButton + .dropdown-menu input:checked').length;
     document.getElementById('tomatometerButton').textContent = selectedCount > 0 ? `Tomatometer (${selectedCount})` : 'Tomatometer';
 }
+
