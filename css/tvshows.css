@@ -15,6 +15,7 @@
 body {
     background-color: #212529;
 }
+
 /* NAV BAR */
 .navbar-dark, .browse .btn-dark, .dropdown-menu, .dropdown-item {
     background-color: #151515!important;
@@ -78,6 +79,7 @@ button:hover {
     display: none;
     visibility: hidden;
 }
+
 /* TV SHOWS */
 .tvshows-section {
     padding-top: 40px;
@@ -96,6 +98,30 @@ button:hover {
 .streaming-platforms img:hover{
     filter: grayscale(0%);
 }
+.streaming-platforms {
+    justify-content: center;
+}
+.streaming-platforms .text-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90px;
+}
+.streaming-platforms img {
+    border: 2px solid #fff;
+    transition: transform 0.3s ease;
+}
+.streaming-platforms img:hover {
+    transform: scale(1.1);
+}
+.streaming-platforms p {
+    font-size: 0.85rem;
+    color: #fff;
+    margin-top: 0.5rem;
+    text-align: center;
+    word-wrap: break-word;
+}
+
 /* Movie Cards */
 .card {
     width: 100%;
@@ -122,13 +148,12 @@ button:hover {
 .card-body {
     padding: 10px;
 }
-
 .card-text {
     font-size: 16px;
     font-weight: bold;
 }
 .tvshows-section .expand {
-    color: #696969;
+    color: #7d7c7c;
     padding-top: 15px;
     float: inline-end;
     text-decoration: none;
