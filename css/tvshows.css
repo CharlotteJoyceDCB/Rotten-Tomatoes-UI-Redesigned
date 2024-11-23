@@ -94,12 +94,15 @@ button:hover {
 .streaming-platforms img{
     filter: grayscale(50%);
     transition: filter 0.3s ease;
+    width: 70px;
+    height: 70px;
 }
 .streaming-platforms img:hover{
     filter: grayscale(0%);
 }
 .streaming-platforms {
     justify-content: center;
+    width: 100%;
 }
 .streaming-platforms .text-center {
     display: flex;
