@@ -72,7 +72,7 @@ button:hover {
 /* Sorting Section */
 .sort-buttons {
     margin-bottom: 25px;
-    margin-left: 2rem;
+    margin-left: 3.5rem;
     gap: 10px;
     display: inline-flex;
     justify-content: space-between;

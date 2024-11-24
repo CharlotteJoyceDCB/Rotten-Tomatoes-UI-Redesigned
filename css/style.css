@@ -156,8 +156,8 @@ button:hover {
     padding: 10px;
     border-radius: 10px;
     border-color: #F93208;
-    background-color: rgba(206, 204, 204, 0);
-    color: #F93208;
+    background-color: #F93208;
+    color: #fff;
     box-shadow: 0 0 0 0 rgba(#F93208, .5);
 }
 .hero-content .movie-details  .trailer-btn:hover {
@@ -730,4 +730,43 @@ footer .copyrights {
     color: #696969;
     margin: auto;
     text-align: center;
+}
+@media (max-width: 932px) {
+    .hero-content .movie-title {
+        width: 300px;
+        height: 100px;
+        float: none;
+        /* padding: 50px; */
+        margin: auto;
+        /* background-color: #F93208; */
+    }
+    .hero-content .slide2-title {
+        height: 115px!important;
+        width: 200px;
+        /* right: 80px; */
+    }
+    .hero-content .slide3-title {
+        left: 40px;
+        /* background-color: #F93208; */
+    }
+    .hero-content .movie-details {
+        /* justify-content: center; */
+        /* background-color: #F93208; */
+        top: 20%;
+    }
+    .hero-content .movie-description {
+        padding-top: 20px;
+    }
+    .hero-content .movie-synopsis {
+        background-color: rgba(0, 0, 0, 0.44);
+        border-radius: 3px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 1024px) {
+
+}
+@media (max-width: 1440px) {
+
 }
