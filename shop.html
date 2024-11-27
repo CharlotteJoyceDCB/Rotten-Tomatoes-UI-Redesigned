@@ -33,6 +33,19 @@
                 <i class="fas fa-bars"></i>
             </button>
 
+            <!-- Search Bar -->
+            <div class="search-bar w-100 hidden">
+                <form class="d-flex align-items-center w-100 form-search">
+                    <div class="input-group">
+                        <input type="search" 
+                               class="form-control" 
+                               placeholder="Search movies, tv shows, actors, and more..." 
+                               aria-label="Search">
+                        <span class="input-group-text bg-white border-0"><i class="fas fa-search"></i></span>
+                    </div>
+                </form>
+            </div>
+
             <!-- Collapsible wrapper -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-3">
@@ -44,7 +57,7 @@
 
                 <!-- Browse Button -->
                 <div class="dropdown browse">
-                    <button class="btn btn-dark dropdown-toggle shadow-0 me-5" 
+                    <button class="btn btn-dark dropdown-toggle shadow-0" 
                         type="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false" 
@@ -70,29 +83,32 @@
                     </ul>
                 </div>                
     
-                <!-- Search Bar -->
-                <div class="search-bar w-100">
-                    <form class="d-flex align-items-center w-100 form-search">
-                        <div class="input-group">
-                            <!-- Search input -->
-                            <input type="search" 
-                                   class="form-control" 
-                                   placeholder="Search movies, tv shows, actors, and more..." 
-                                   aria-label="Search">
-                            <!-- Search icon inside the input -->
-                            <span class="input-group-text bg-white border-0"><i class="fas fa-search"></i></span>
-                        </div>
-                    </form>
-                </div>
-
                 <!-- Nav Links -->
                 <ul class="navbar-nav ms-3">
+                    <li class="nav-item submenu">
+                        <a class="nav-link d-flex align-items-center" href="movies.html#movies">Movies</a>
+                    </li>
+                    <li class="nav-item submenu">
+                        <a class="nav-link d-flex align-items-center" href="tvshows.html#tv">TV Shows</a>
+                    </li>
+                    <li class="nav-item submenu">
+                        <a class="nav-link d-flex align-items-center" href="tomatometer.html#tomatometer">Tomatometer</a>
+                    </li>
+                    <li class="nav-item submenu">
+                        <a class="nav-link d-flex align-items-center" href="news.html#news">News</a>
+                    </li>
+                    <li class="nav-item submenu">
+                        <a class="nav-link d-flex align-items-center" href="critics.html#critics">Critics</a>
+                    </li>
+                    <li class="menu-divider">
+                        <hr class="solid">
+                    </li>
                     <li class="nav-item me-3">
-                    <a class="nav-link d-flex align-items-center" href="#!">Shop</a>
+                    <a class="nav-link d-flex align-items-center" href="shop.html">Shop</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link d-flex align-items-center me-3" href="watchlist.html#watchlist">
-                        <i class="fas fa-bookmark pe-2"></i> Watchlist
+                        <i class="fas fa-bookmark pe-2 hidden"></i> Watchlist
                     </a>
                     </li>
                     <li class="nav-item" style="width: 65px;">

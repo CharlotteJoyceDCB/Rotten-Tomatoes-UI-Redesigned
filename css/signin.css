@@ -13,6 +13,16 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
+::-webkit-scrollbar {
+    width: 3px;
+}
+::-webkit-scrollbar-track {
+    background: #212529;
+}
+::-webkit-scrollbar-thumb {
+    background: #F93208;
+    border-radius: 10px;
+}
 body {
     background-color: #212529;
     position: relative;
@@ -26,15 +36,34 @@ body {
 .browse .btn:hover {
     background-color: #2c2c2c!important;
 }
-input[type="search"]:focus {
-    outline: none !important;
-    box-shadow: none !important;
-  }
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration { 
-    display: none; 
+.input-group-text:hover {
+    background-color: #f0f0f0;
+    color: #F93208;
+}
+.navbar .submenu {
+    display: none;
+    visibility: hidden;
+}
+/* Search Bar */
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+  }  
+.search-bar {
+    border: none;
+ }
+ .input-group input {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+.input-group input:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+.search-bar form {
+    outline: none;
 }
 a:hover, .btn:hover {
     color: #F93208 !important;
@@ -59,14 +88,53 @@ button:hover {
     display: none;
     visibility: hidden;
 }
-.navbar .search-bar span {
-    cursor: pointer;
+.navbar .submenu {
+    display: none;
+    visibility: hidden;
 }
-.navbar .search-bar i:active {
-    transform: translateY(2px);
+/* Search Bar */
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+  }  
+.search-bar {
+    border: none;
+ }
+ .input-group input {
+    outline: none;
+    box-shadow: none;
+    border: none;
 }
-.navbar .search-bar i:hover {
-    color: #F93208;
+.input-group input:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+.search-bar form {
+    outline: none;
+}
+a:hover, .btn:hover {
+    color: #F93208 !important;
+}
+.btn-outline-primary .btn:hover {
+    color: #F93208 !important;
+}
+button:focus, button:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+button:hover {
+    color: rgb(49, 49, 49);
+}
+.browse .dropdown-menu a:focus {
+    box-shadow: 0 0 10px 100px #2c2c2c inset;
+}
+.navbar-toggler button, #menu a {
+    display: none !important;
+}
+.navbar-collapse #nav-hidden {
+    display: none;
+    visibility: hidden;
 }
 body{
     display: flex;
@@ -74,98 +142,97 @@ body{
     text-align: center;
     align-items: center;
     justify-content: center;
-    /* background: #151515; */
-  }
+}
 .login-form{
-position: relative;
-width: 370px;
-height: auto;
-background: #1b1b1b;
-margin-top: 50px;
-padding: 40px 35px 60px;
-box-sizing: border-box;
-border: 1px solid black;
-border-radius: 5px;
-box-shadow: inset 0 0 1px #272727;
+    position: relative;
+    width: 370px;
+    height: auto;
+    background: #1b1b1b;
+    margin-top: 50px;
+    padding: 40px 35px 60px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: inset 0 0 1px #272727;
 }
 .text{
-font-size: 30px;
-color: #c7c7c7;
-font-weight: 600;
-letter-spacing: 2px;
+    font-size: 30px;
+    color: #c7c7c7;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 .signin form{
-margin-top: 40px;
+    margin-top: 40px;
 }
 .signin form .field{
-margin-top: 20px;
-display: flex;
+    margin-top: 20px;
+    display: flex;
 }
 .signin .field .fas{
-height: 50px;
-width: 60px;
-color: #868686;
-font-size: 20px;
-line-height: 50px;
-border: 1px solid #444;
-border-right: none;
-border-radius: 5px 0 0 5px;
-background: linear-gradient(#333,#222);
+    height: 50px;
+    width: 60px;
+    color: #868686;
+    font-size: 20px;
+    line-height: 50px;
+    border: 1px solid #444;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    background: linear-gradient(#333,#222);
 }
 .signin .field input, .signin form button{
-height: 50px;
-width: 100%;
-outline: none;
-font-size: 19px;
-color: #868686;
-padding: 0 15px;
-border-radius: 0 5px 5px 0;
-border: 1px solid #444;
-caret-color: #F93208;
-background: linear-gradient(#333,#222);
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 19px;
+    color: #868686;
+    padding: 0 15px;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid #444;
+    caret-color: #F93208;
+    background: linear-gradient(#333,#222);
 }
 .signin input:focus{
-color: #F93208;
-box-shadow: 0 0 5px rgba(255, 115, 0, 0.2),
-inset 0 0 5px rgba(255, 136, 0, 0.1);
-background: linear-gradient(#333933,#222922);
-animation: glow .8s ease-out infinite alternate;
+    color: #F93208;
+    box-shadow: 0 0 5px rgba(255, 115, 0, 0.2),
+    inset 0 0 5px rgba(255, 136, 0, 0.1);
+    background: linear-gradient(#333933,#222922);
+    animation: glow .8s ease-out infinite alternate;
 }
 @keyframes glow {
-0%{
-border-color: #F93208;
-box-shadow: 0 0 5px rgba(255, 153, 0, 0.2),
-inset 0 0 5px rgba(0,0,0,.1);
+    0%{
+    border-color: #F93208;
+    box-shadow: 0 0 5px rgba(255, 153, 0, 0.2),
+    inset 0 0 5px rgba(0,0,0,.1);
 }
 100%{
-border-color: #F93208;
-box-shadow: 0 0 20px rgba(255, 140, 0, 0.6),
-inset 0 0 10px rgba(255, 166, 0, 0.4);
+    border-color: #F93208;
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.6),
+    inset 0 0 10px rgba(255, 166, 0, 0.4);
 }
 }
 .signin button{
-margin-top: 30px;
-border-radius: 5px!important;
-font-weight: 600;
-letter-spacing: 1px;
-cursor: pointer;
+    margin-top: 30px;
+    border-radius: 5px!important;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
 }
 .signin button:hover{
-color: #F93208;
-border: 1px solid #F93208;
-box-shadow: 0 0 5px rgba(255, 111, 0, 0.3),
-            0 0 10px rgba(255, 85, 0, 0.2),
-            0 0 15px rgba(255, 149, 0, 0.1),
-            0 2px 0 black;
+    color: #F93208;
+    border: 1px solid #F93208;
+    box-shadow: 0 0 5px rgba(255, 111, 0, 0.3),
+                0 0 10px rgba(255, 85, 0, 0.2),
+                0 0 15px rgba(255, 149, 0, 0.1),
+                0 2px 0 black;
 }
 .link{
-margin-top: 25px;
-color: #868686;
+    margin-top: 25px;
+    color: #868686;
 }
 .link a{
-color: #F93208;
-text-decoration: none;
+    color: #F93208;
+    text-decoration: none;
 }
 .link a:hover{
-text-decoration: underline;
+    text-decoration: underline;
 }
