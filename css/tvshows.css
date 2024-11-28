@@ -363,3 +363,84 @@ footer .copyrights {
     margin: auto;
     text-align: center;
 }
+@media (max-width: 1024px) {
+    .tvshows-section {
+        padding-top: 70px;
+    }
+    .streaming-platforms img {
+        width: 30px;
+        height: 30px;
+    }
+    .streaming-platforms {
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .streaming-platforms .text-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 55px;
+    }
+    .streaming-platforms p {
+        font-size: 0.75rem;
+        color: #fff;
+        margin-top: 0.5rem;
+        text-align: center;
+        word-wrap: break-word;
+    }
+    .card {
+        width: 100%;
+        max-width: 250px;
+        /* width: 250px; */
+    }
+    .badge {
+        font-size: 12px;
+    }
+    .card-body {
+        padding: 10px;
+    }
+    .card-text {
+        font-size: 9px;
+        font-weight: bold;
+    }
+}
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        max-width: 250px;
+        /* width: 250px; */
+    }
+    .badge {
+        font-size: 12px;
+    }
+    .card-body {
+        padding: 10px;
+    }
+    .card-text {
+        font-size: 9px;
+        font-weight: bold;
+    }
+}
+@media (max-width: 576px) {
+    .card {
+        /* width: 100%; */
+        /* max-width: 250px; */
+        width: 150px!important;
+    }
+    .swiper-slide {
+        padding-right: 50px;
+    }
+    .badge {
+        font-size: 12px;
+    }
+    .card-body {
+        padding: 10px;
+    }
+    .card-text {
+        font-size: 9px;
+        font-weight: bold;
+    }
+    .swiper-slide {
+        padding-right: 9rem;
+    }
+}
