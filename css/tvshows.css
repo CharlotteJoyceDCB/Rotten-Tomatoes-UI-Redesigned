@@ -405,6 +405,17 @@ footer .copyrights {
     }
 }
 @media (max-width: 768px) {
+    .navbar .browse {
+        visibility: hidden;
+        display: none;
+    }
+    .navbar-nav .submenu {
+        visibility: visible;
+        display: block;
+    }
+    .navbar-nav:first-child {
+        padding-top: 10px;
+    }
     .card {
         width: 100%;
         max-width: 250px;

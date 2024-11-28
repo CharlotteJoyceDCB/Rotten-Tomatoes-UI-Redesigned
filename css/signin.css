@@ -236,3 +236,16 @@ body{
 .link a:hover{
     text-decoration: underline;
 }
+@media (max-width: 768px) {
+    .navbar .browse {
+        visibility: hidden;
+        display: none;
+    }
+    .navbar-nav .submenu {
+        visibility: visible;
+        display: block;
+    }
+    .navbar-nav:first-child {
+        padding-top: 10px;
+    }
+}
