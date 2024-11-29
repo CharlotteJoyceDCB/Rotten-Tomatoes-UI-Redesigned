@@ -431,6 +431,10 @@ footer .copyrights {
         font-size: 9px;
         font-weight: bold;
     }
+    .navbar-nav i {
+        visibility: hidden;
+        display: none;
+    }
 }
 @media (max-width: 576px) {
     .card {
@@ -453,5 +457,9 @@ footer .copyrights {
     }
     .swiper-slide {
         padding-right: 9rem;
+    }
+    footer input {
+        width: 200px;
+        font-size: 16px;
     }
 }
