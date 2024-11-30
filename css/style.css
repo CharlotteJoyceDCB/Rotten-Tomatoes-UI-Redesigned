@@ -142,6 +142,7 @@ button:hover {
     height: 100vh;
     display: flex;
     width: 100%;
+    overflow: hidden;
 }
 .hero-content .poster-img {
     height: 100vh;
@@ -153,6 +154,7 @@ button:hover {
     z-index: 99999;
     margin-top: 70px;
     position: relative;
+    overflow: hidden;
 }
 .hero-content .movie-title {
     position: relative;
@@ -248,8 +250,10 @@ button:hover {
 }
 /* Swiper */
 .swiper {
+    position: relative;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
+    overflow: hidden;
 }
 .swiper-slide {
     text-align: center;
@@ -258,11 +262,13 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .swiper-slide img {
-    display: block;
+    display: flex;
     width: 100%;
     height: 100%;
+    height: auto;
     object-fit: cover;
 }
 .swiper-button-next, .swiper-button-prev {
@@ -273,6 +279,13 @@ button:hover {
     outline: none;
     border: none;
     box-shadow: none;
+}
+.swiper-pagination {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
 }
 .navbar .search-bar span {
     cursor: pointer;
@@ -369,11 +382,17 @@ button:hover {
     background-color: #e1e1e1;
 }
 .load-more-container {
-    margin-top: auto;
+    position: relative;
+    margin-top: 15px;
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 .load-more {
-    margin: auto;
     padding: 10px 20px;
+    width: 100%;
+    margin: 0 auto;
     font-size: 16px;
     background-color: #333;
     color: #fff;
@@ -381,7 +400,7 @@ button:hover {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
+  }
   
 .load-more:hover {
     background-color: #555;
@@ -801,12 +820,36 @@ footer .copyrights {
     text-align: center;
 }
 
-@media (max-width: 1024px) {
-    .movie-cards {
+@media (min-width: 1024px) {
+    /* .movie-cards {
         grid-template-columns: repeat(3, 1fr);
     }
+    #popular-cards {
+        grid-template-columns: repeat(3, 1fr);
+    } */
 }
 @media (max-width: 768px) {
+    .hero-content .card {
+        height: 100px;
+        width: 100px;
+    }
+    .movie-cards {
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0 auto;
+        padding: 0;
+    }
+    .movie-cards .hidden, .movies-cards .hidden{
+        display: none;
+        visibility: hidden;
+    }
+    .card {
+        margin: 0 auto;
+    }
+    #popular-cards {
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0 auto;
+        padding: 0;
+    }
     .navbar .browse {
         visibility: hidden;
         display: none;
@@ -821,6 +864,59 @@ footer .copyrights {
     .navbar-nav i {
         visibility: hidden;
         display: none;
+    }
+    .swiper-button-prev, .swiper-button-next {
+        display: none;
+        visibility: hidden;
+    }
+    .hero-content .movie-details {
+        top: 20%!important;
+    }
+    .hero-content .poster-img {
+        height: 100%;
+    }
+    .hero-content .movie-details {
+        top: 30%;
+    }
+    .hero-content .movie-description {
+        margin: 0 auto;
+        /* background-color: #007bff; */
+    }
+    .hero-content .movie-title {
+        height: 100%;
+        width: 500px;
+        padding: 20px;
+        /* float: none; */
+        margin: 0 auto;
+        /* background-color: #007bff; */
+    }
+    .movie-cards {
+        gap: 5px;
+    }
+    #popular-cards.movies-cards {
+        gap: 5px;
+    }
+    .card .tomatometer span {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .card .tomatometer img {
+        max-width: 25px;
+        max-height: 25px;
+    }
+    .card-title {
+        font-size: 12px;
+        color: #565656;
+    }
+    .banner img {
+        height: 150px;
+        top: 40px;
+    }
+    .banner p {
+        font-size: 26px;
+        font-weight: 600;
+        padding-left: 50px;
+        padding-top: 55px;
     }
     .shop-section {
         padding-top: 40px;
@@ -837,6 +933,69 @@ footer .copyrights {
     }
 }
 @media (max-width: 576px) {
+    .movie-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #popular-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .swiper-button-prev, .swiper-button-next {
+        display: none;
+        visibility: hidden;
+    }
+    .hero-content .movie-details {
+        top: 40%;
+    }
+    .hero-content .movie-title {
+        height: 100%;
+        width: 350px;
+        padding: 20px;
+        float: none;
+        margin: 0 auto;
+    }
+    .movie-cards .hidden, .movies-cards .hidden{
+        display: flex;
+        visibility: visible;
+    }
+    .card {
+        /* margin-right: 5px; */
+        margin: 0 auto;
+        position: relative;
+        width: 9rem;
+        border-spacing: 0;
+        display: inline-flex;
+        overflow: hidden!important;
+        margin: 0 auto;
+    }
+    .card-img-top {
+        height: 350px!important;
+    }
+    .card button {
+        font-size: 10px;
+    }
+    .card .tomatometer span {
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .card .tomatometer img {
+        max-width: 15px;
+        max-height: 15px;
+    }
+    .card-title {
+        font-size: 9px;
+        color: #565656;
+    }
+    .banner img {
+        height: 100px;
+        top: 90px;
+    }
+    .banner p {
+        font-size: 15px;
+        font-weight: 600;
+        text-wrap: nowrap;
+        padding-left: 50px;
+        padding-top: 75px;
+    }
     footer input {
         width: 200px;
         font-size: 16px;
