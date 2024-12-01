@@ -175,6 +175,9 @@ button:hover {
     align-items: center;
     padding: 5px;
 }
+.hero-content .movie-details {
+    top: 5px;
+}
 .hero-content .movie-genre {
     padding-bottom: 10px;
 }
@@ -332,7 +335,6 @@ button:hover {
     display: grid; grid-gap: 10px; grid-template-columns: repeat(6, 1fr); 
 }
 .card {
-    /* margin-right: 5px; */
     position: relative;
     width: 11rem;
     border-spacing: 0;
@@ -539,6 +541,13 @@ button:hover {
 }
 #explore-title:hover {
     color: #939191;
+}
+.explore-section .view-all {
+    position: relative;
+    padding-bottom: 10px;
+    /* width: 150px; */
+    /* right: 10px; */
+    margin: 0 auto;
 }
 /* SHOP SECTION */
 .shop-section {
@@ -820,18 +829,147 @@ footer .copyrights {
     text-align: center;
 }
 
-@media (min-width: 1024px) {
-    /* .movie-cards {
-        grid-template-columns: repeat(3, 1fr);
+@media (max-width: 1024px) {
+    .card {
+        position: relative;
+        width: 12.5rem;
+        border-spacing: 0;
+        display: inline-flex;
+        overflow: hidden!important;
     }
-    #popular-cards {
-        grid-template-columns: repeat(3, 1fr);
-    } */
-}
-@media (max-width: 768px) {
     .hero-content .card {
         height: 100px;
         width: 100px;
+    }
+    .movie-cards, .movies-cards {
+        overflow-x: hidden;
+    }
+    .movie-cards {
+        grid-template-columns: repeat(6, 1fr);
+        margin: 0 auto;
+        padding: 0;
+    }
+    .movie-cards .hidden, .movies-cards .hidden{
+        display: flex;
+        visibility: visible;
+    }
+    .card {
+        margin: 0 auto;
+        width: 9rem;
+    }
+    .card .tomatometer span {
+        font-size: 10px!important;
+    }
+    .card .card-title {
+        font-size: 11px;
+    }
+    #popular-cards {
+        grid-template-columns: repeat(6, 1fr);
+        margin: 0 auto;
+        padding: 0;
+    }
+    .navbar .browse {
+        visibility: hidden;
+        display: none;
+    }
+    .navbar-nav .submenu {
+        visibility: visible;
+        display: block;
+    }
+    .navbar-nav:first-child {
+        padding-top: 10px;
+    }
+    .navbar-nav i {
+        visibility: hidden;
+        display: none;
+    }
+    .swiper-button-prev, .swiper-button-next {
+        display: none;
+        visibility: hidden;
+    }
+    .hero-content .movie-details {
+        top: 20%!important;
+    }
+    .hero-content .poster-img {
+        height: 100%;
+    }
+    .hero-content .movie-details {
+        top: 10%!important;
+    }
+    .hero-content .slide2 .movie-title {
+        width: 350px;
+    }
+    .hero-content .slide2 .movie-details {
+        top: 15px!important;
+    }
+    .hero-content .slide3 .movie-details {
+        top: 35px!important;
+    }
+    .hero-content .movie-description {
+        margin: 0 auto;
+        /* background-color: #007bff; */
+    }
+    .hero-content .movie-title {
+        height: 100%;
+        width: 500px;
+        padding: 20px;
+        /* float: none; */
+        margin: 0 auto;
+        /* background-color: #007bff; */
+    }
+    .hero-content .slide3 .movie-title {
+        height: 100%;
+        width: 350px;
+    }
+    .movie-cards {
+        gap: 5px;
+    }
+    #popular-cards.movies-cards {
+        gap: 5px;
+    }
+    .card .tomatometer span {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .card .tomatometer img {
+        max-width: 25px;
+        max-height: 25px;
+    }
+    .card-title {
+        font-size: 12px;
+        color: #565656;
+    }
+    .banner img {
+        height: 150px;
+        top: 40px;
+    }
+    .banner p {
+        font-size: 26px;
+        font-weight: 600;
+        padding-left: 50px;
+        padding-top: 55px;
+    }
+    .shop-section {
+        padding-top: 40px;
+    }
+    .shop-card {
+        width: 10rem;
+        height: 18rem;
+    }
+    .critics-section {
+        padding-top: 40px;
+    }
+    .tomatometer-section {
+        padding-top: 90px;
+    }
+}
+@media (min-width: 578px) and (max-width: 992px) {
+    .hero-content .card {
+        height: 100px;
+        width: 100px;
+    }
+    .movie-cards, .movies-cards {
+        overflow-x: hidden;
     }
     .movie-cards {
         grid-template-columns: repeat(4, 1fr);
@@ -844,6 +982,14 @@ footer .copyrights {
     }
     .card {
         margin: 0 auto;
+        width: 10rem;
+        height: auto;
+    }
+    .card .tomatometer span {
+        font-size: 12px!important;
+    }
+    .watch-btn {
+        font-size: 5px;
     }
     #popular-cards {
         grid-template-columns: repeat(4, 1fr);
@@ -876,7 +1022,16 @@ footer .copyrights {
         height: 100%;
     }
     .hero-content .movie-details {
-        top: 30%;
+        top: 10%!important;
+    }
+    .hero-content .slide2 .movie-title {
+        width: 350px;
+    }
+    .hero-content .slide2 .movie-details {
+        top: 15px!important;
+    }
+    .hero-content .slide3 .movie-details {
+        top: 35px!important;
     }
     .hero-content .movie-description {
         margin: 0 auto;
@@ -889,6 +1044,10 @@ footer .copyrights {
         /* float: none; */
         margin: 0 auto;
         /* background-color: #007bff; */
+    }
+    .hero-content .slide3 .movie-title {
+        height: 100%;
+        width: 350px;
     }
     .movie-cards {
         gap: 5px;
@@ -957,15 +1116,16 @@ footer .copyrights {
         display: flex;
         visibility: visible;
     }
+    .hero-content .slide2 .movie-details {
+        top: 5%!important;
+    }
+    .hero-content .slide3 .movie-details {
+        top: 10%!important;
+    }
     .card {
         /* margin-right: 5px; */
         margin: 0 auto;
-        position: relative;
         width: 9rem;
-        border-spacing: 0;
-        display: inline-flex;
-        overflow: hidden!important;
-        margin: 0 auto;
     }
     .card-img-top {
         height: 350px!important;
@@ -985,16 +1145,19 @@ footer .copyrights {
         font-size: 9px;
         color: #565656;
     }
+    .banner {
+        height: 150px;
+    }
     .banner img {
         height: 100px;
-        top: 90px;
+        top: 40px;
     }
     .banner p {
-        font-size: 15px;
+        font-size: 18px;
         font-weight: 600;
         text-wrap: nowrap;
-        padding-left: 50px;
-        padding-top: 75px;
+        padding-left: 30px;
+        padding-top: 50px;
     }
     footer input {
         width: 200px;
