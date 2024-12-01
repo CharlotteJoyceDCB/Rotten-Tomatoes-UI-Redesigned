@@ -175,7 +175,7 @@ button:hover {
     text-decoration: underline;
 }
 .badge-count {
-    background-color: #e0e0e0; /* Light gray background */
+    background-color: #e0e0e0; 
     color: black;
     padding: 2px 8px;
     border-radius: 12px;
