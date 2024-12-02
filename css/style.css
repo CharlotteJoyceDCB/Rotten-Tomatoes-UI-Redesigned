@@ -183,10 +183,10 @@ button:hover {
     margin-bottom: 0!important;
 }
 .hero-content .slide1 .movie-details {
-    top: 30%;
+    top: 25%;
 }
 .hero-content .slide2 .movie-details {
-    top: 50%;
+    top: 15%!important;
 }
 .hero-content .slide2 .movie-title {
     width: 600px;
@@ -1179,14 +1179,14 @@ footer .copyrights {
     }
     .hero-content .slide3 .movie-title {
         height: 100%;
-        width: 400px!important;
+        width: 500px!important;
         float: left!important;
         margin-bottom: 1.3rem!important;
         padding-bottom: 0;
         padding-top: 0;
     }
     .hero-content .slide3 .movie-details {
-        top: 35%!important;
+        top: 30%!important;
     }
     .card {
         /* margin-right: 5px; */
