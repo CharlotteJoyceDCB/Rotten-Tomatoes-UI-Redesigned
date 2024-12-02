@@ -179,31 +179,28 @@ button:hover {
 }
 .hero-content .slide1 .movie-title {
     max-height: max-content;
-    width: 700px;
-    margin-bottom: 0!important;
-}
-.hero-content .slide1 .movie-details {
-    top: 25%;
-}
-.hero-content .slide2 .movie-details {
-    top: 15%!important;
-}
-.hero-content .slide2 .movie-title {
     width: 600px;
     margin-bottom: 0!important;
 }
+.hero-content .slide1 .movie-details {
+    top: 15%;
+}
 .hero-content .slide2 .movie-details {
-    top: 20%;
+    top: 10%!important;
+}
+.hero-content .slide2 .movie-title {
+    width: 500px;
+    margin-bottom: 0!important;
 }
 .hero-content .slide3 .movie-title {
-    width: 500px;
+    width: 480px;
     max-height: 200px;
     padding-right: 1rem;
     margin-bottom: 0!important;
     max-height: max-content;
 }
 .hero-content .slide3 .movie-details {
-    top: 25%!important;
+    top: 15%!important;
     /* margin-top: 20%; */
 }
 .hero-content .movie-genre {
