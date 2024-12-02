@@ -232,13 +232,17 @@ button:hover {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    display: grid; grid-gap:15px; grid-template-columns: repeat(6, 1fr); 
+    display: grid; 
+    grid-gap: 1rem; 
+    grid-template-columns: repeat(6, 1fr); 
 }
 #popular-cards {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    display: grid; grid-gap: 10px; grid-template-columns: repeat(6, 1fr); 
+    display: grid; 
+    grid-gap: 1rem; 
+    grid-template-columns: repeat(6, 1fr); 
 }
 .card {
     /* margin-right: 5px; */

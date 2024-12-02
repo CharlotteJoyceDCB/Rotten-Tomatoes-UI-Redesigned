@@ -325,14 +325,16 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 1rem;
     grid-template-columns: repeat(6, 1fr); 
 }
 #popular-cards {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    display: grid; grid-gap: 10px; grid-template-columns: repeat(6, 1fr); 
+    display: grid; 
+    grid-gap: 1rem; 
+    grid-template-columns: repeat(6, 1fr); 
 }
 .card {
     position: relative;
@@ -340,6 +342,7 @@ button:hover {
     border-spacing: 0;
     display: inline-flex;
     overflow: hidden!important;
+    margin-bottom: 0.5rem!important;
 }
 .card-img-top {
     height: 350px!important;
@@ -434,6 +437,7 @@ button:hover {
 }
 .banner a:hover {
     color: #fff!important;
+    text-decoration: underline;
 }
 /* TRAILER & VIDEOS SECTION */
 .trailer-section {
@@ -491,7 +495,21 @@ button:hover {
 .trailer-card .card-body .card-title:hover, 
 .trailer-card .card-body .card-text:hover {
     cursor: pointer;
-    color: #007bff;
+    color: #F93208;
+}
+.trailer-section .view-all {
+    position: relative;
+    padding-bottom: 10px;
+    /* width: 150px; */
+    /* right: 10px; */
+    margin: 0 auto;
+}
+.trailer-section a {
+    float: inline-end;
+    padding-bottom: 20px;
+    padding-right: 25px;
+    text-decoration: none;
+    color: rgb(147, 147, 147);
 }
 /* EXPLORE SECTION */
 .explore-section {
@@ -540,7 +558,7 @@ button:hover {
     color: #fff;
 }
 #explore-title:hover {
-    color: #939191;
+    color: #F93208;
 }
 .explore-section .view-all {
     position: relative;
@@ -907,7 +925,6 @@ footer .copyrights {
     }
     .hero-content .movie-description {
         margin: 0 auto;
-        /* background-color: #007bff; */
     }
     .hero-content .movie-title {
         height: 100%;
@@ -915,7 +932,6 @@ footer .copyrights {
         padding: 20px;
         /* float: none; */
         margin: 0 auto;
-        /* background-color: #007bff; */
     }
     .hero-content .slide3 .movie-title {
         height: 100%;
@@ -963,7 +979,7 @@ footer .copyrights {
         padding-top: 90px;
     }
 }
-@media (min-width: 578px) and (max-width: 992px) {
+@media (max-width: 992px) {
     .hero-content .card {
         height: 100px;
         width: 100px;
@@ -973,8 +989,6 @@ footer .copyrights {
     }
     .movie-cards {
         grid-template-columns: repeat(4, 1fr);
-        margin: 0 auto;
-        padding: 0;
     }
     .movie-cards .hidden, .movies-cards .hidden{
         display: none;
@@ -1090,8 +1104,14 @@ footer .copyrights {
     .tomatometer-section {
         padding-top: 90px;
     }
+    .trailer-cards .card {
+        height: 20rem;
+    }
+    .explore-cards .card {
+        height: 13rem;
+    }
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .movie-cards {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -1158,6 +1178,12 @@ footer .copyrights {
         text-wrap: nowrap;
         padding-left: 30px;
         padding-top: 50px;
+    }
+    .trailer-cards .card {
+        height: 18rem;
+    }
+    .explore-cards .card {
+        height: 13rem;
     }
     footer input {
         width: 200px;
