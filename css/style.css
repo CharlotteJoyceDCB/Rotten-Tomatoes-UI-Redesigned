@@ -15,6 +15,7 @@
 }
 ::-webkit-scrollbar {
     width: 3px;
+    height: 3px;
 }
 ::-webkit-scrollbar-track {
     background: #212529;
@@ -162,6 +163,8 @@ button:hover {
     z-index: 99999;
     position: relative;
     overflow: hidden;
+    clear: both;
+    width: 100%;
     /* top: 30%!important; */
 }
 .hero-content .movie-description {
@@ -193,7 +196,7 @@ button:hover {
     margin-bottom: 0!important;
 }
 .hero-content .slide3 .movie-title {
-    width: 480px;
+    width: 440px!important;
     max-height: 200px;
     padding-right: 1rem;
     margin-bottom: 0!important;
@@ -417,9 +420,9 @@ button:hover {
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
-  
 .load-more:hover {
-    background-color: #555;
+    /* background-color: #555; */
+    background-color: #d02402;
     color: #fff;
 }
  
@@ -865,6 +868,11 @@ footer .copyrights {
     margin: auto;
     text-align: center;
 }
+@media (max-width: 1440px) {
+    .card {
+        width: 12.5rem;
+    }
+}
 @media (max-width: 1024px) {
     .card {
         position: relative;
@@ -922,10 +930,9 @@ footer .copyrights {
     .movie-details .slide1-title {
         margin-bottom: 0!important;
         width: max-content;
-        max-height: 200px;
     }
     .hero-content .slide1 .movie-details {
-        top: 30%;
+        top: 18%;
     }
     .hero-content .slide2 .movie-title {
         padding-bottom: 1rem;
@@ -935,20 +942,19 @@ footer .copyrights {
         top: 50%;
     }
     .hero-content .slide2 .movie-title {
-        width: 600px;
+        width: 450px;
     }
     .hero-content .slide2 .movie-details {
         top: 20%;
     }
     .hero-content .slide3 .movie-title {
-        width: 500px;
-        max-height: 200px;
+        width: 400px!important;
         padding-right: 1rem;
         margin-bottom: 0.5rem;
         max-height: max-content;
     }
     .hero-content .slide3 .movie-details {
-        top: 25%!important;
+        top: 12%!important;
         /* margin-top: 20%; */
     }
     .movie-cards {
@@ -1054,19 +1060,19 @@ footer .copyrights {
         float: left!important;
     }
     .hero-content .slide1 .movie-title {
-        width: 600px!important;
-    }
-    .hero-content .slide1 .movie-details {
-        top: 30%!important;
-    }
-    .hero-content .slide2 .movie-title {
         width: 500px!important;
     }
-    .hero-content .slide2 .movie-details {
+    .hero-content .slide1 .movie-details {
         top: 20%!important;
     }
+    .hero-content .slide2 .movie-title {
+        width: 450px!important;
+    }
+    .hero-content .slide2 .movie-details {
+        top: 18%!important;
+    }
     .hero-content .slide3 .movie-details {
-        top: 30%!important;
+        top: 18%!important;
     }
     .hero-content .movie-description {
         margin: 0 auto;
@@ -1077,12 +1083,12 @@ footer .copyrights {
         width: 900px;
         padding: 20px;
         /* float: none; */
-        margin: 0 auto;
+        margin: 0 auto!important;
         /* background-color: #007bff; */
     }
     .hero-content .slide3 .movie-title {
         height: 100%;
-        width: 390px;
+        width: 460px;
     }
     .movie-cards {
         gap: 5px;
@@ -1146,44 +1152,36 @@ footer .copyrights {
     .hero-content .movie-details {
         top: 30%;
     }
-    .hero-content .movie-title {
-        height: 100%;
-        width: 390px;
-        /* padding: 20px; */
-        float: none;
-        margin: 0 auto;
-    }
     .movie-cards .hidden, .movies-cards .hidden{
         display: flex;
         visibility: visible;
     }
     .hero-content .slide1 .movie-details {
-        top: 35%!important;
-    }
-    .hero-content .slide2 .movie-details {
         top: 25%!important;
     }
-    .hero-content .movie-title {
-        width: 400px!important;
+    .hero-content .slide2 .movie-details {
+        top: 20%!important;
     }
     .hero-content .slide1 .movie-title {
-        width: 500px!important;
+        width: 490px!important;
+        margin: 0 auto!important;
     }
     .hero-content .slide2 .movie-title {
-        width: 500px!important;
+        width: 450px!important;
         padding: 0;
         margin-bottom: 1rem!important;
     }
     .hero-content .slide3 .movie-title {
         height: 100%;
-        width: 500px!important;
+        width: 400px!important;
         float: left!important;
         margin-bottom: 1.3rem!important;
+        padding-right: 40px!important;
         padding-bottom: 0;
         padding-top: 0;
     }
     .hero-content .slide3 .movie-details {
-        top: 30%!important;
+        top: 20%!important;
     }
     .card {
         /* margin-right: 5px; */
@@ -1262,7 +1260,7 @@ footer .copyrights {
     }
     .hero-content .slide3 .movie-title {
         height: 200px;
-        padding: 1px;
+        padding: 15px;
         margin-bottom: 1.3rem;
     }
 }
