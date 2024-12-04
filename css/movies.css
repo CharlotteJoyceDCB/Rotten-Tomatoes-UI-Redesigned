@@ -74,6 +74,10 @@ a:hover, .btn:hover {
 .btn-outline-primary .btn:hover {
     color: #F93208 !important;
 }
+.navbar .browse button:hover {
+    background-color: rgb(49, 49, 49)!important;
+    border-radius: 6px!important;
+}
 button:focus, button:active {
     outline: none !important;
     box-shadow: none !important;
@@ -92,7 +96,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .search-bar {
     border: none;
  }
- .input-group input {
+.input-group input {
     outline: none;
     box-shadow: none;
     border: none;
@@ -138,10 +142,10 @@ button:hover {
 .sort-buttons button {
     margin: 5px;
 }
-.dropdown .btn {
+/* .dropdown .btn {
     font-size: 16px;
     border-radius: 25px;
-}
+} */
 .genre-btn .dropdown-menu {
     height: 400px;
     overflow: scroll;
@@ -185,7 +189,10 @@ button:hover {
     margin-left: 5px;
 }
 .certified-fresh-btn button, .verified-hot-btn button {
-    border-radius: 25px;
+    /* border-radius: 25px; */
+}
+.form-check-input {
+    cursor: pointer;
 }
 .certified-fresh-btn img, .verified-hot-btn img {
     height: 20px;
