@@ -870,13 +870,13 @@ footer .copyrights {
 }
 @media (max-width: 1440px) {
     .card {
-        width: 12.5rem;
+        width: 12rem;
     }
 }
 @media (max-width: 1024px) {
     .card {
         position: relative;
-        width: 12.5rem;
+        width: 11rem;
         border-spacing: 0;
         display: inline-flex;
         overflow: hidden!important;
