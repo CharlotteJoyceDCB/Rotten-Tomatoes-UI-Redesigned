@@ -248,6 +248,9 @@ footer .copyrights {
         visibility: hidden;
         display: none;
     }
+    .trend-news {
+        padding-top: 20px;
+    }
 }
 @media (max-width: 576px) {
     footer input {
