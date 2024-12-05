@@ -599,10 +599,16 @@ button:hover {
     cursor: pointer;
     flex-wrap: wrap;
     display: flex; 
-    justify-content: center;
-    grid-gap: 15px; 
-    /* grid-template-columns: repeat(5, 1fr);  */
+    justify-content: center!important;
+    gap: 15px; 
+    
 }
+/* .shop-card:first-child {
+    margin-left: 5.5rem!important;
+}
+.shop-card:nth-child(5) {
+    margin-left: 5.5rem!important;
+} */
 .shop-card img {
     border-radius: 0;
     object-fit: fill;
@@ -610,6 +616,7 @@ button:hover {
 .shop-card {
     width: 14rem;
     height: 20rem;
+    /* background-color: #007bff; */
 }
 .shop-card .card-body {
     line-height: 1;
@@ -987,10 +994,10 @@ footer .copyrights {
         padding-top: 55px;
     }
     .shop-section {
-        padding-top: 40px;
+        padding-top: 10px;
     }
     .shop-card {
-        width: 10rem;
+        width: 13rem;
         height: 18rem;
     }
     .critics-section {
@@ -998,6 +1005,12 @@ footer .copyrights {
     }
     .tomatometer-section {
         padding-top: 90px;
+    }
+    .shop-cards {
+        flex-wrap: wrap;
+        display: flex; 
+        justify-content: flex-start!important;
+        align-items: flex-start!important;
     }
 }
 @media (max-width: 992px) {
@@ -1070,7 +1083,7 @@ footer .copyrights {
         width: 450px!important;
     }
     .hero-content .slide2 .movie-details {
-        top: 18%!important;
+        top: 15%!important;
     }
     .hero-content .slide3 .movie-details {
         top: 18%!important;
@@ -1164,18 +1177,18 @@ footer .copyrights {
         top: 20%!important;
     }
     .hero-content .slide1 .movie-title {
-        width: 490px!important;
+        width: 496px!important;
         margin: 0 auto!important;
     }
     .hero-content .slide2 .movie-title {
-        width: 470px!important;
+        width: 476px!important;
         height: 240px;
         padding: 0;
         margin-bottom: 1rem!important;
     }
     .hero-content .slide3 .movie-title {
         height: 100%;
-        width: 480px!important;
+        width: 497px!important;
         float: left!important;
         margin-bottom: 1.3rem!important;
         padding-right: 40px!important;
@@ -1184,6 +1197,10 @@ footer .copyrights {
     }
     .hero-content .slide3 .movie-details {
         top: 20%!important;
+    }
+    .hero-content .movie-description {
+        flex-wrap: nowrap!important;
+        margin-top: 1rem!important;
     }
     .card {
         /* margin-right: 5px; */
@@ -1227,6 +1244,13 @@ footer .copyrights {
     }
     .explore-cards .card {
         height: 13rem;
+    }
+    .shop-cards {
+        grid-gap: 10px!important;
+    }
+    .shop-card {
+        font-size: 12px;
+        width: 10rem;
     }
     footer input {
         width: 200px;
@@ -1273,6 +1297,9 @@ footer .copyrights {
     }
     .banner p {
         font-size: 15px;
+    }
+    .shop-card {
+        width: 10rem;
     }
     footer button {
         margin-top: 10px;
