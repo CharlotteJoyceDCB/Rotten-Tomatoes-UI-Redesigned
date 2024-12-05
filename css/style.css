@@ -1298,6 +1298,9 @@ footer .copyrights {
     .banner p {
         font-size: 15px;
     }
+    .watchlist-section .tomatoe {
+        margin-top: 45%!important;
+    }
     .shop-card {
         width: 10rem;
     }
