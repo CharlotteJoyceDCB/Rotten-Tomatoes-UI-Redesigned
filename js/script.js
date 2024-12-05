@@ -63,3 +63,4 @@ function updateTomatometerCount() {
     document.getElementById('tomatometerButton').textContent = selectedCount > 0 ? `Tomatometer (${selectedCount})` : 'Tomatometer';
 }
 
+

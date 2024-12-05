@@ -138,9 +138,14 @@ button:hover {
     display: flex;
     width: 100%;
     padding-bottom: 10px;
+    overflow: visible!important;
 }
 .sort-buttons button {
     margin: 5px;
+}
+.sort-buttons .dropdown-menu {
+    position: fixed;
+    z-index: 999;
 }
 /* .dropdown .btn {
     font-size: 16px;
@@ -260,6 +265,7 @@ button:hover {
     border-spacing: 0;
     display: inline-flex;
     overflow: hidden!important;
+    margin: 0 auto;
 }
 .card-img-top {
     height: 350px!important;
@@ -408,7 +414,7 @@ footer .copyrights {
 }
 @media (max-width: 1024px) {
     .card {
-        width: 10.5rem;
+        width: 10rem;
     }
     .movie-cards {
         grid-gap: 1rem; 
@@ -427,7 +433,19 @@ footer .copyrights {
         grid-template-columns: repeat(4, 1fr); 
     }
     .sort-buttons {
-        overflow-x: scroll;
+        justify-content: center;
+        margin: 0 auto;
+        /* background-color: red; */
+    }
+    .sort-buttons button {
+        font-size: 13px;
+    }
+    .sort-buttons .hidden {
+        display: none;
+        visibility: hidden;
+    }
+    .certified-fresh-btn {
+        margin-left: 1rem;
     }
 }
 @media (max-width: 768px) {
@@ -460,11 +478,26 @@ footer .copyrights {
     }
     .movie-cards {
         grid-gap: 1rem; 
-        grid-template-columns: repeat(4, 1fr); 
+        grid-template-columns: repeat(3, 1fr); 
+        margin: 0 auto;
     }
     .tomatometer img {
         width: 20px;
         height: 20px;
+    }
+    .sort-buttons {
+        width: 90%;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        /* background-color: red; */
+        /* justify-content: flex-start; */
+    }
+    .sort-buttons button {
+        font-size: 13px;
+    }
+    .sort-buttons .hidden {
+        display: none;
+        visibility: hidden;
     }
 }
 @media (max-width: 430px) {
@@ -474,6 +507,19 @@ footer .copyrights {
     .movie-cards {
         grid-gap: 1rem; 
         grid-template-columns: repeat(2, 1fr); 
+    }
+    .sort-buttons {
+        width: 90%;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    .sort-buttons button {
+        font-size: 12px;
+    }
+    .sort-buttons .hidden {
+        display: flex;
+        justify-content: flex-start!important;
+        visibility: visible;
     }
     footer input {
         width: 200px;
