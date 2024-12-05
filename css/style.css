@@ -614,7 +614,7 @@ button:hover {
     object-fit: fill;
 }
 .shop-card {
-    width: 16rem!important;
+    width: 12rem!important;
     height: 20rem;
     /* background-color: #007bff; */
 }
@@ -1250,7 +1250,7 @@ footer .copyrights {
     }
     .shop-card {
         font-size: 12px;
-        width: 10rem;
+        width: 9rem;
     }
     footer input {
         width: 200px;
@@ -1302,7 +1302,7 @@ footer .copyrights {
         margin-top: 45%!important;
     }
     .shop-card {
-        width: 12rem;
+        width: 11rem;
     }
     footer button {
         margin-top: 10px;
