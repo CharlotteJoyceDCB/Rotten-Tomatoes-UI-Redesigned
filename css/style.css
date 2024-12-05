@@ -224,6 +224,7 @@ button:hover {
 .hero-content .movie-description .rating-score {
     display: flex;
     align-items: center;
+    flex-wrap: nowrap;
 }
 .hero-content .movie-description .rating-score span{
     padding-left: 5px;
@@ -1167,13 +1168,14 @@ footer .copyrights {
         margin: 0 auto!important;
     }
     .hero-content .slide2 .movie-title {
-        width: 450px!important;
+        width: 470px!important;
+        height: 240px;
         padding: 0;
         margin-bottom: 1rem!important;
     }
     .hero-content .slide3 .movie-title {
         height: 100%;
-        width: 400px!important;
+        width: 480px!important;
         float: left!important;
         margin-bottom: 1.3rem!important;
         padding-right: 40px!important;
@@ -1244,7 +1246,7 @@ footer .copyrights {
         float: none!important;
     }
     .hero-content .slide1 .movie-details {
-        top: 30%;
+        top: 35%!important;
     }
     .hero-content .slide1 .movie-title {
         padding: 0;
@@ -1254,6 +1256,9 @@ footer .copyrights {
         margin: 0;
     }
     .hero-content .slide2 .movie-details {
+        top: 30%!important;
+    }
+    .hero-content .slide3 .movie-details {
         top: 30%!important;
     }
     .hero-content .slide2 .movie-title {
