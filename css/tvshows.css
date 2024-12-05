@@ -158,7 +158,7 @@ button:hover {
     filter: grayscale(0%);
 }
 .streaming-platforms {
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
 }
 .streaming-platforms .text-center {
@@ -368,8 +368,8 @@ footer .copyrights {
         padding-top: 70px;
     }
     .streaming-platforms img {
-        width: 30px;
-        height: 30px;
+        width: 70px;
+        height: 70px;
     }
     .streaming-platforms {
         justify-content: flex-start;
@@ -435,6 +435,10 @@ footer .copyrights {
         visibility: hidden;
         display: none;
     }
+    .streaming-platforms img {
+        width: 70px;
+        height: 70px;
+    }
 }
 @media (max-width: 576px) {
     .card {
@@ -457,6 +461,10 @@ footer .copyrights {
     }
     .swiper-slide {
         padding-right: 9rem;
+    }
+    .streaming-platforms img {
+        width: 50px;
+        height: 50px;
     }
     footer input {
         width: 200px;
