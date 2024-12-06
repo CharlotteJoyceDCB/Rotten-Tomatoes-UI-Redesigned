@@ -564,7 +564,7 @@ button:hover {
 }
 .explore-card {
     position: relative;
-    width: 18rem!important;
+    width: 16rem!important;
     height: 15rem;
     cursor: pointer;
     border: none;
