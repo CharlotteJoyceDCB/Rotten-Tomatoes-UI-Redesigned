@@ -1304,6 +1304,13 @@ footer .copyrights {
     .shop-card {
         width: 11rem;
     }
+    .tomatometer-section th {
+        font-size: 10px;
+    }
+    .tomatometer-section td {
+        /* background-color: #007bff; */
+        font-size: 10px;
+    }
     footer button {
         margin-top: 10px;
         margin-left: 30px;
