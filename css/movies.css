@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root {
-    --swiper-pagination-color: red;
+    /* --swiper-pagination-color: red; */
     --swiper-pagination-bullet-inactive-color: #fff;
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
@@ -192,9 +192,6 @@ button:hover {
     border-radius: 12px;
     font-size: 0.8em;
     margin-left: 5px;
-}
-.certified-fresh-btn button, .verified-hot-btn button {
-    /* border-radius: 25px; */
 }
 .form-check-input {
     cursor: pointer;
