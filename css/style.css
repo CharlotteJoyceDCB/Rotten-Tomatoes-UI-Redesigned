@@ -1155,11 +1155,14 @@ footer .copyrights {
     }
 }
 @media (max-width: 768px) {
+    .movie-cards .card, .pop-cards .card {
+        width: 10.5rem!important;
+    }
     .movie-cards {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4 1fr);
     }
     #popular-cards {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
     .swiper-button-prev, .swiper-button-next {
         display: none;
@@ -1168,10 +1171,10 @@ footer .copyrights {
     .hero-content .movie-details {
         top: 30%;
     }
-    .movie-cards .hidden, .movies-cards .hidden{
+    /* .movie-cards .hidden, .movies-cards .hidden{
         display: flex;
         visibility: visible;
-    }
+    } */
     .hero-content .slide1 .movie-details {
         top: 25%!important;
     }
@@ -1260,10 +1263,16 @@ footer .copyrights {
     }
 }
 @media (max-width: 430px) {
-    .card {
-        /* margin-right: 5px; */
-        margin: 0 auto;
-        width: 8rem;
+    .movie-cards {
+        grid-gap: 1rem!important; 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .pop-cards {
+        grid-gap: 1rem!important; 
+        grid-template-columns: repeat(2, 1fr)!important;
+    }
+    .movie-cards .card, .pop-cards .card {
+        width: 10.5rem!important;
     }
     .card .tomatometer span {
         font-size: 9px!important;
@@ -1278,7 +1287,7 @@ footer .copyrights {
         padding: 0;
         margin-bottom: 10px!important;
         float: none!important;
-        width: 390px!important;
+        width: 350px!important;
         margin: 0;
     }
     .hero-content .slide2 .movie-details {
@@ -1293,7 +1302,7 @@ footer .copyrights {
         width: 390px!important;
     }
     .hero-content .slide3 .movie-title {
-        height: 200px;
+        width: 370px!important;
         padding: 15px;
         margin-bottom: 1.3rem;
     }
@@ -1304,7 +1313,7 @@ footer .copyrights {
         margin-top: 45%!important;
     }
     .shop-card {
-        width: 11rem;
+        width: 10rem!important;
     }
     .tomatometer-section th {
         font-size: 10px;

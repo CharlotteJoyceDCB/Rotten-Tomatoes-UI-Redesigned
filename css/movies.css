@@ -432,7 +432,7 @@ footer .copyrights {
     .sort-buttons {
         justify-content: center;
         margin: 0 auto;
-        /* background-color: red; */
+        width: 100%;
     }
     .sort-buttons button {
         font-size: 13px;
@@ -465,18 +465,19 @@ footer .copyrights {
         padding-top: 30px;
     }
     .sort-buttons {
+        flex-wrap: nowrap!important;
         overflow-x: scroll;
+        width: 90%;
     }
     .card {
-        width: 9rem;
+        width: 10rem;
     }
     .card-title {
         font-size: 11px;
     }
     .movie-cards {
         grid-gap: 1rem; 
-        grid-template-columns: repeat(3, 1fr); 
-        margin: 0 auto;
+        grid-template-columns: repeat(4, 1fr); 
     }
     .tomatometer img {
         width: 20px;
@@ -499,7 +500,7 @@ footer .copyrights {
 }
 @media (max-width: 430px) {
     .card {
-        width: 12rem;
+        width: 10rem;
     }
     .movie-cards {
         grid-gap: 1rem; 
@@ -507,19 +508,22 @@ footer .copyrights {
     }
     .sort-buttons {
         width: 90%;
-        flex-wrap: wrap;
+        flex-wrap: wrap!important;
         margin: 0 auto;
     }
     .sort-buttons button {
-        font-size: 12px;
+        font-size: 10px;
     }
     .sort-buttons .hidden {
-        display: flex;
-        justify-content: flex-start!important;
-        visibility: visible;
+        display: none;
+        visibility: hidden;
     }
     footer input {
         width: 200px;
         font-size: 16px;
+    }
+    footer button {
+        margin-top: 10px;
+        margin-left: 30px;
     }
 }
