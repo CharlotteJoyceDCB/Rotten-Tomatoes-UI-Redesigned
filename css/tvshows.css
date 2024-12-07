@@ -181,7 +181,16 @@ button:hover {
     text-align: center;
     word-wrap: break-word;
 }
-
+.show-stream a {
+    margin-top: -20px;
+    text-decoration: none;
+    visibility: hidden;
+    display: none;
+}
+.show-stream a {
+    text-decoration: none;
+    color: #7d7c7c;
+}
 /* Movie Cards */
 .card {
     width: 100%;
@@ -227,6 +236,9 @@ button:hover {
     background-color: #2e3237;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+.featured {
+    margin-top: -20px!important;
 }
 /* SWIPER */
 .swiper-container {
@@ -368,8 +380,8 @@ footer .copyrights {
         padding-top: 70px;
     }
     .streaming-platforms img {
-        width: 70px;
-        height: 70px;
+        width: 75px;
+        height: 60px;
     }
     .streaming-platforms {
         justify-content: flex-start;
@@ -437,8 +449,34 @@ footer .copyrights {
     }
     .streaming-platforms img {
         width: 70px;
-        height: 70px;
+        height: 60px;
     }
+}
+@media (max-width: 767px) {
+    .streaming-platforms {
+        width: 100%!important;
+        justify-content: center;
+    }
+    .streaming-platforms img {
+        width: 50px;
+        height: 50px;
+    }
+    .streaming-platforms .ms {
+        display: none;
+        visibility: hidden;
+    }
+    .show-stream a{
+        margin-top: -40px;
+        margin-left: 5px;
+        visibility: visible;
+        display: block;
+    }
+    .card {
+        width: 100%;
+        max-width: 250px!important;
+        width: 100px;
+    }
+    
 }
 @media (max-width: 576px) {
     .card {
@@ -462,12 +500,29 @@ footer .copyrights {
     .swiper-slide {
         padding-right: 9rem;
     }
+    .streaming-platforms {
+        justify-content: center;
+    }
     .streaming-platforms img {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
+    }
+    .streaming-platforms .xs {
+        display: none;
+        visibility: hidden;
+    }
+    .show-stream a {
+        margin-top: -25px;
+        margin-left: 20px;
+        visibility: visible;
+        display: block;
     }
     footer input {
         width: 200px;
         font-size: 16px;
+    }
+    footer button {
+        margin-top: 10px;
+        margin-left: 30px;
     }
 }

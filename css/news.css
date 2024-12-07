@@ -254,4 +254,8 @@ footer .copyrights {
         width: 200px;
         font-size: 16px;
     }
+    footer button {
+        margin-top: 10px;
+        margin-left: 30px;
+    }
 }
