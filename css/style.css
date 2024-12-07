@@ -1342,6 +1342,9 @@ footer .copyrights {
     .shop-card {
         width: 10rem!important;
     }
+    .explore-card {
+        width: 18rem!important;
+    }
     .tomatometer-section th {
         font-size: 10px;
     }
