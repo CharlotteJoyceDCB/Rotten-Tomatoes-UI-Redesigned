@@ -136,6 +136,10 @@ button:hover {
     display: none;
     visibility: hidden;
 }
+
+.navbar .search-bar i {
+    cursor: pointer;
+}
 body{
     display: flex;
     height: 100vh;

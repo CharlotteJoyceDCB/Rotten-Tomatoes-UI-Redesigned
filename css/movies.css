@@ -48,9 +48,6 @@ body {
 .navbar .search-bar span {
     cursor: pointer;
 }
-.navbar .search-bar i:active {
-    transform: translateY(2px);
-}
 .navbar .search-bar i:hover {
     color: #F93208;
 }
