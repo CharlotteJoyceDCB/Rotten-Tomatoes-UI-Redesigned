@@ -438,13 +438,14 @@ button:hover {
     font-weight: 600;
     padding-left: 50px;
     padding-top: 40px;
+    color: #fff;
 }
 .banner a {
     text-decoration: none;
     color: #fff;
 }
 .banner a:hover {
-    color: #fff!important;
+    color: rgb(0, 255, 0)!important;
     text-decoration: underline;
 }
 /* TRAILER & VIDEOS SECTION */
@@ -607,7 +608,7 @@ button:hover {
     object-fit: fill;
 }
 .shop-card {
-    width: 12rem!important;
+    width: 12.5rem!important;
     height: 20rem;
     /* background-color: #007bff; */
 }
@@ -758,7 +759,7 @@ button:hover {
 }
 /* TOMATOMETER SECTION */
 .tomatometer-section {
-    background-color:  #d8d8d883;
+    background-color:  #eeeeee83;
     padding-top: 60px;
 }
 .tomatometer-section .sort-buttons .dropdown-menu {
@@ -773,7 +774,21 @@ button:hover {
 .tomatometer-section tr:hover td {
     color: #F93208;
 }
+.tomatometer-section .btn-secondary {
+    background-color: #F93208!important;
+}
+.tomatometer-section .text-end a {
+    color: #808080;
+}
+.tomatometer-section .text-end a:hover {
+    color: #F93208;
+}
+.genre-meter button {
+    border: none;
+    color: #fff;
+}
 .genre-meter button:hover {
+    border: none;
     color: #fff!important;
 }
 .genre-meter .dropdown-menu {
@@ -798,6 +813,14 @@ button:hover {
 .genre-meter .tomatometer-sort .dropdown-menu, .popcornmeter-sort .dropdown-menu {
     height: max-content;
     overflow: hidden;
+}
+.table button {
+    color: #F93208;
+    /* outline: #F93208!important; */
+    /* border: #F93208!important; */
+}
+.btn-outline-primary button:hover {
+    background-color: #F93208;
 }
 .table button:hover {
     color: #fff!important;
