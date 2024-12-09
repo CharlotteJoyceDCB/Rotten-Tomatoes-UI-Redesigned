@@ -28,7 +28,7 @@ body {
 
 /* NAV BAR */
 .navbar-dark, .browse .btn-dark, .dropdown-menu, .dropdown-item {
-    background-color: #151515!important;
+    background-color: #000000!important;
     border: none;
     color: #939191;
 }
