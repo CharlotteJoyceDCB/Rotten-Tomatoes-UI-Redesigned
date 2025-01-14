@@ -260,6 +260,7 @@ button:hover {
     display: inline-flex;
     overflow: hidden!important;
     margin: 0 auto;
+    cursor: pointer;
 }
 .card-img-top {
     height: 350px!important;

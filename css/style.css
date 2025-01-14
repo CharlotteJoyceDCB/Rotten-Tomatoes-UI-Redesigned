@@ -351,6 +351,7 @@ button:hover {
     display: inline-flex;
     overflow: hidden!important;
     margin-bottom: 0.5rem!important;
+    cursor: pointer;
 }
 .card-img-top {
     height: 350px!important;
